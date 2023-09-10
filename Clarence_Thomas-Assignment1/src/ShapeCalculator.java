@@ -1,7 +1,7 @@
-// @author Clarence Thomas
+// @author: Clarence Thomas
 // CLASS: Info 1521 WA
 // ASSIGNMENT: ASSIGNMENT 1
-// DATE: September 11th, 2023
+// @version: September 11th, 2023
 // RESOURCES: Utilized the Coding Examples provided in week 1
 
 // This program is an Area Calculator providing the area of 4 shapes (Rectangle, Triangle, Trapezoid, Circle)
