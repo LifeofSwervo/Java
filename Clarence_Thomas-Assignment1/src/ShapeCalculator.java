@@ -19,9 +19,10 @@ public class ShapeCalculator
         String decision = "y";
         //String output = "";
         String output;
+        double Pi = Math.PI;
 
         // Check if user wishes to repeat
-        while (decision.equalsIgnoreCase("y")) // Account for if user enters value other than Y / N
+        while (decision.equalsIgnoreCase("y"))
         {
             System.out.println("\n1. Area of Rectangle \n2. Area of Triangle \n3. Area of Trapezoid \n" +
                     "4. Area of Circle \nPlease select operations: ");
@@ -61,7 +62,7 @@ public class ShapeCalculator
             {
                 System.out.println("Enter radius of Circle: ");
                 double radius = input.nextDouble(); // Parse radius of circle
-                double circleArea = (radius * radius) * 3.14; // Calculate's area of circle
+                double circleArea = (radius * radius) * Pi; // Calculate's area of circle
                 output = "The area of the circle is: " + circleArea;
                 System.out.println("\n" + output); // Display Result
             } else
