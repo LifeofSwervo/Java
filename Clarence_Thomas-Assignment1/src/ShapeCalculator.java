@@ -25,7 +25,7 @@ public class ShapeCalculator
         while (decision.equalsIgnoreCase("y"))
         {
             System.out.println("\n1. Area of Rectangle \n2. Area of Triangle \n3. Area of Trapezoid \n" +
-                    "4. Area of Circle \nPlease select operations: ");
+                    "4. Area of Circle \nPlease select operation: ");
             int operation = input.nextInt(); // Parse operation selected by user
 
 
