@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb77a3de-3c02-4716-b611-078ef481df3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShapeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShapeCalculator.java" afterDir="false" />
-    </list>
+    <list default="true" id="eb77a3de-3c02-4716-b611-078ef481df3c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +74,7 @@
       <workItem from="1694205860529" duration="4602000" />
       <workItem from="1694291963147" duration="3194000" />
       <workItem from="1694377710472" duration="2035000" />
+      <workItem from="1694466885359" duration="94000" />
     </task>
     <servers />
   </component>
