@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb77a3de-3c02-4716-b611-078ef481df3c" name="Changes" comment="" />
+    <list default="true" id="eb77a3de-3c02-4716-b611-078ef481df3c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Clarence_Thomas-Assignment1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Clarence_Thomas-Assignment1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShapeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShapeCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +78,7 @@
       <workItem from="1694291963147" duration="3194000" />
       <workItem from="1694377710472" duration="2035000" />
       <workItem from="1694466885359" duration="94000" />
+      <workItem from="1694467938946" duration="686000" />
     </task>
     <servers />
   </component>
