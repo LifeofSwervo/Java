@@ -19,7 +19,6 @@ public class InterestCalculator
         // Declare variables
         Scanner input = new Scanner(System.in);
         String decision = "y";
-        String output;
 
         while (decision.equalsIgnoreCase("y"))
         {
@@ -29,20 +28,28 @@ public class InterestCalculator
             float interestAmount = input.nextFloat(); // Parse interest rate
             //float roundedInterest = Math.round(interestAmount);
 
-            double accruedInterest = loanAmount * interestAmount;
+            double accruedInterest = loanAmount * interestAmount; // Calculate accrued interest
             NumberFormat currency = NumberFormat.getCurrencyInstance();
             String loanAmountString = currency.format(loanAmount); // Translates loan amount to better format
 
             NumberFormat percent = NumberFormat.getPercentInstance();
+            percent.setMaximumFractionDigits(3); // Sets minimum Interest Rate digits to be 3
             String interestRateString = percent.format(interestAmount); // Translates interest rate to percent
 
             String interestString = currency.format(accruedInterest); // Translates interest to better format
 
+            // Output Loan info to user
             System.out.println("Loan Amount: " + loanAmountString);
             System.out.println("Interest Rate: " + interestRateString);
             System.out.println("Interest: " + interestString);
 
+            System.out.println("Continue (y/n)? ");
+            decision = input.next(); // Check if user wishes to continue
+        }
 
+        if (decision.equalsIgnoreCase("n")) // If user no longer wishes to continue
+        {
+            System.out.println("Have a great day, Goodbye! ");
         }
     }
 }
