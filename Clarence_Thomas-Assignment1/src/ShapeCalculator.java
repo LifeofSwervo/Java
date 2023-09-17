@@ -24,7 +24,7 @@ public class ShapeCalculator
         // Check if user wishes to repeat
         while (decision.equalsIgnoreCase("y"))
         {
-            System.out.println("\n1. Area of Rectangle \n2. Area of Triangle \n3. Area of Trapezoid \n" + // Avoid 120 character limit
+            System.out.print("\n1. Area of Rectangle \n2. Area of Triangle \n3. Area of Trapezoid \n" + // Avoid 120 character limit
                     "4. Area of Circle \nPlease select operation: ");
             int operation = input.nextInt(); // Parse operation selected by user
 
