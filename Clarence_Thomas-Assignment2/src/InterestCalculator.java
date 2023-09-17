@@ -26,7 +26,7 @@ public class InterestCalculator
         {
             System.out.print("Enter the loan amount: ");
             float loanAmount = input.nextFloat(); // Parse Loan amount
-            loanAmount = (float) Math.round(loanAmount * 100) / 100; // Round
+            loanAmount = (float) Math.round(loanAmount * 100) / 100; // Round loan amount
 
             System.out.print("Enter the interest rate: ");
             float interestAmount = input.nextFloat(); // Parse interest rate
@@ -34,13 +34,13 @@ public class InterestCalculator
             float accruedInterest = loanAmount * interestAmount; // Calculate accrued interest
             accruedInterest = Math.round(accruedInterest * 100) / 100f; // Round
 
-            NumberFormat currency = NumberFormat.getCurrencyInstance();
-            NumberFormat percent = NumberFormat.getPercentInstance();
+            NumberFormat currency = NumberFormat.getCurrencyInstance(); // Format number's to be currency
+            NumberFormat percent = NumberFormat.getPercentInstance(); // Format number's to be percent
 
             percent.setMaximumFractionDigits(3); // Sets minimum Interest Rate digits to be 3
 
 
-            BigDecimal interest = BigDecimal.valueOf(accruedInterest);
+            BigDecimal interest = BigDecimal.valueOf(accruedInterest); // Convert accrued interest to BigDecimal for more accurate calculations.
 
             interest = interest.setScale(2, RoundingMode.HALF_UP);
 
@@ -49,11 +49,13 @@ public class InterestCalculator
             String interestString = currency.format(interest); // Translates interest to better format
 
             // Output Loan info to user
+            System.out.println(); // Blank line
             System.out.println("Loan Amount: " + loanAmountString);
             System.out.println("Interest Rate: " + interestRateString);
             System.out.println("Interest: " + interestString);
 
             System.out.print("Continue (y/n)? ");
+
             decision = input.next(); // Check if user wishes to continue
         }
 
