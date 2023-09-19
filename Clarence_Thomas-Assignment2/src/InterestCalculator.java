@@ -2,9 +2,11 @@
 // CLASS: Info 1521 WA
 // ASSIGMENT: Assignment 1
 // @version: September 18th, 2023
-// RESOURCES:
+/* RESOURCES: Utilized Examples in Chapter 2 of Murach's Java Programming, Also utilized Java Docs on BigDecimal,
+ NumebrFormat, setMaximumFractionDigits and setScale */
 
-// EXPLANATION:
+/* EXPLANATION: This program is an Interest Calculator providing the interest, interest rate and loan amount after
+being given the interest rate (in floating point) and loan amount. */
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -22,6 +24,7 @@ public class InterestCalculator
         Scanner input = new Scanner(System.in);
         String decision = "y";
 
+        // While user wishes to continue
         while (decision.equalsIgnoreCase("y"))
         {
             System.out.print("Enter the loan amount: ");
@@ -39,10 +42,9 @@ public class InterestCalculator
 
             percent.setMaximumFractionDigits(3); // Sets minimum Interest Rate digits to be 3
 
-
             BigDecimal interest = BigDecimal.valueOf(accruedInterest); // Convert accrued interest to BigDecimal for more accurate calculations.
 
-            interest = interest.setScale(2, RoundingMode.HALF_UP);
+            interest = interest.setScale(2, RoundingMode.HALF_UP); // Sets to 2 decimals and rounds up.
 
             String interestRateString = percent.format(interestAmount); // Translates interest rate to percent
             String loanAmountString = currency.format(loanAmount); // Translates loan amount to better format
