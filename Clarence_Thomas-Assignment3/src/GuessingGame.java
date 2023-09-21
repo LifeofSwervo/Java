@@ -333,6 +333,329 @@ public class GuessingGame
                     }
                 }
             }
+        } else if (isSinglePlayer.equalsIgnoreCase("n"))
+        {
+            System.out.println("Is the game primarily Co-op?");
+            System.out.print(YES_OR_NO);
+            String multiplayerCoopInput = input.nextLine();
+
+            if (multiplayerCoopInput.equalsIgnoreCase("y"))
+            {
+                System.out.println("Is the game perspective 1st person");
+                System.out.print(YES_OR_NO);
+                String multiplayerFirstPersonInput = input.nextLine();
+
+                if (multiplayerFirstPersonInput.equalsIgnoreCase("y"))
+                {
+                    System.out.println("Is this game a Looter, Gear based RPG? ");
+                    System.out.print(YES_OR_NO);
+                    String multiplayerGearBasedRpgInput = input.nextLine();
+
+                    if (multiplayerGearBasedRpgInput.equalsIgnoreCase("y"))
+                    {
+                        System.out.println("Is the game based in our (Milky way) Galaxy? ");
+                        System.out.print(YES_OR_NO);
+                        String multiplayerGalaxySettingInput = input.nextLine();
+
+                        if (multiplayerGalaxySettingInput.equalsIgnoreCase("y"))
+                        {
+                            System.out.println("Is the game from the Destiny franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerGalaxySettingInput.equalsIgnoreCase("n"))
+                        {
+                            System.out.println("Is the game from the Borderlands franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    } else if (multiplayerGearBasedRpgInput.equalsIgnoreCase("n"))
+                    {
+                        System.out.println("Are zombies in this game? ");
+                        System.out.print(YES_OR_NO);
+                        String multiplayerZombieInput = input.nextLine();
+
+                        if (multiplayerZombieInput.equalsIgnoreCase("y"))
+                        {
+                            System.out.println("Is the game from the Left 4 Dead franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerZombieInput.equalsIgnoreCase("n"))
+                        {
+                            System.out.println("Is the game from the War-hammer Vermantide franchise?");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    }
+                } else if (multiplayerFirstPersonInput.equalsIgnoreCase("n"))
+                {
+                    System.out.println("Is the game an MMO? ");
+                    System.out.print(YES_OR_NO);
+                    String multiplayerMMOInput = input.nextLine();
+
+                    if (multiplayerMMOInput.equalsIgnoreCase("y"))
+                    {
+                        System.out.println("What is the max amount of players you can see on screen? ");
+                        System.out.print(TELL_USER_INPUT_INT);
+                        int multiplayerLobbySize = input.nextInt();
+                        input.nextLine();
+
+                        if (multiplayerLobbySize > 50)
+                        {
+                            System.out.println("Is the game World of Warcraft? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerLobbySize > 15 && multiplayerLobbySize < 50)
+                        {
+                            System.out.println("Is the game Tower of Fantasy? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerLobbySize > 8 && multiplayerLobbySize <= 15)
+                        {
+                            System.out.println("Is the game from the Diablo franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerLobbySize <= 8 )
+                        {
+                            System.out.println("Is the game Warframe?");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    } else if (multiplayerMMOInput.equalsIgnoreCase("n"))
+                    {
+                        System.out.println("Is this game 2d? ");
+                        System.out.print(YES_OR_NO);
+                        String multiplayer2dInput = input.nextLine();
+
+                        if (multiplayer2dInput.equalsIgnoreCase("y"))
+                        {
+                            System.out.println("Is the game Factorio? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayer2dInput.equalsIgnoreCase("n"))
+                        {
+                            System.out.println("Is the game Minecraft? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    }
+                }
+            } else if (multiplayerCoopInput.equalsIgnoreCase("n"))
+            {
+                System.out.println("Is the game a shooter? ");
+                System.out.print(YES_OR_NO);
+                String multiplayerShooterInput = input.nextLine();
+
+                if (multiplayerShooterInput.equalsIgnoreCase("y"))
+                {
+                    System.out.println("Does the game have a military focus? ");
+                    System.out.print(YES_OR_NO);
+                    String multiplayerMilitaryInput = input.nextLine();
+
+                    if (multiplayerMilitaryInput.equalsIgnoreCase("y"))
+                    {
+                        System.out.println("How many players can fit in a lobby? ");
+                        System.out.print(TELL_USER_INPUT_INT);
+                        int multiplayerShooterLobbySize = input.nextInt();
+                        input.nextLine();
+
+                        if (multiplayerShooterLobbySize >= 13)
+                        {
+                            System.out.println("Is the game from the Battlefield franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerShooterLobbySize <= 12)
+                        {
+                            System.out.println("Is the game from the Call of Duty franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    } else if (multiplayerMilitaryInput.equalsIgnoreCase("n"))
+                    {
+                        System.out.println("Did Blizzard develop this game? ");
+                        System.out.print(YES_OR_NO);
+                        String multiplayerBlizzardInput = input.nextLine();
+
+                        if (multiplayerBlizzardInput.equalsIgnoreCase("y"))
+                        {
+                            System.out.println("Is the game Overwatch? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerBlizzardInput.equalsIgnoreCase("n"))
+                        {
+                            System.out.println("Is the game Paladins? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    }
+                } else if (multiplayerShooterInput.equalsIgnoreCase("n"))
+                {
+                    System.out.println("Is this a sports game? ");
+                    System.out.print(YES_OR_NO);
+                    String isMultiplayerSportsInput = input.nextLine();
+
+                    if (isMultiplayerSportsInput.equalsIgnoreCase("y"))
+                    {
+                        System.out.println("Is this game based on Basketball or Football? ");
+                        System.out.print("Type in 'Basketball' or 'Football': ");
+                        String multiplayerSportTypeInput = input.nextLine();
+
+                        if (multiplayerSportTypeInput.equalsIgnoreCase("Basketball"))
+                        {
+                            System.out.println("Is the game from the NBA 2k franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerSportTypeInput.equalsIgnoreCase("Football"))
+                        {
+                            System.out.println("Is the game from the Madden franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    } else if (isMultiplayerSportsInput.equalsIgnoreCase("n"))
+                    {
+                        System.out.println("Is a ball involved in this game? ");
+                        System.out.print(YES_OR_NO);
+                        String multiplayerBallInput = input.nextLine();
+
+                        if (multiplayerBallInput.equalsIgnoreCase("y"))
+                        {
+                            System.out.println("Is the game Rocket League? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        } else if (multiplayerBallInput.equalsIgnoreCase("n"))
+                        {
+                            System.out.println("Is the game from the Forza Horizon franchise? ");
+                            System.out.print(YES_OR_NO);
+
+                            String correctGameChosenInput = input.nextLine();
+
+                            if (correctGameChosenInput.equalsIgnoreCase("y"))
+                            {
+                                System.out.println(CORRECT_GAME);
+                                System.out.print(EXIT_MESSAGE);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
