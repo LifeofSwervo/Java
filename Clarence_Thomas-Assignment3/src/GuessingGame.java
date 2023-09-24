@@ -93,6 +93,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (singlePlayerMilitaryInput.equalsIgnoreCase("n"))
                     {
@@ -134,7 +137,13 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
                 } else if (singlePlayerShooterInput.equalsIgnoreCase("n")) {
                     System.out.println("Are puzzles prominent in this game? ");
@@ -181,6 +190,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (singlePlayerPuzzlesInput.equalsIgnoreCase("n"))
                     {
@@ -222,8 +234,17 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
+                } else
+                {
+                    System.out.println(INVALID_INPUT);
                 }
             } else if (singlePlayerPerspective.equalsIgnoreCase("n")) // Single player game, not 3rd person
             {
@@ -246,7 +267,7 @@ public class GuessingGame
 
                         input.nextLine();
 
-                        if (singlePlayerGameAge <= 4)
+                        if (singlePlayerGameAge <= 4 && singlePlayerGameAge >= 0)
                         {
                             System.out.println("Is the game Darkest Dungeon 2?");
                             System.out.print(YES_OR_NO);
@@ -297,6 +318,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (singlePlayerTurnBasedInput.equalsIgnoreCase("n"))
                     {
@@ -340,7 +364,13 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
                 } else if (singlePlayerStrategyInput.equalsIgnoreCase("n"))
                 {
@@ -390,6 +420,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (singlePlayerWinConditionInput.equalsIgnoreCase("n"))
                     {
@@ -433,9 +466,21 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
+                } else
+                {
+                    System.out.println(INVALID_INPUT);
                 }
+            } else
+            {
+                System.out.println(INVALID_INPUT);
             }
         } else if (isSinglePlayer.equalsIgnoreCase("n"))
         {
@@ -497,6 +542,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (multiplayerGearBasedRpgInput.equalsIgnoreCase("n"))
                     {
@@ -540,7 +588,13 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
                 } else if (multiplayerFirstPersonInput.equalsIgnoreCase("n"))
                 {
@@ -609,7 +663,7 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
-                        } else if (multiplayerLobbySize <= 8 )
+                        } else if (multiplayerLobbySize <= 8 && multiplayerLobbySize >= 1) // No bots in a lobby so 0 is min size
                         {
                             System.out.println("Is the game Warframe?");
                             System.out.print(YES_OR_NO);
@@ -670,8 +724,17 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
+                } else
+                {
+                    System.out.println(INVALID_INPUT);
                 }
             } else if (multiplayerCoopInput.equalsIgnoreCase("n"))
             {
@@ -710,7 +773,7 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
-                        } else if (multiplayerShooterLobbySize <= 12)
+                        } else if (multiplayerShooterLobbySize <= 12 && multiplayerShooterLobbySize >= 0) // Bots can be in lobby so min size is 0
                         {
                             System.out.println("Is the game from the Call of Duty franchise? ");
                             System.out.print(YES_OR_NO);
@@ -728,6 +791,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (multiplayerMilitaryInput.equalsIgnoreCase("n"))
                     {
@@ -771,7 +837,13 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
                 } else if (multiplayerShooterInput.equalsIgnoreCase("n"))
                 {
@@ -821,6 +893,9 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
                     } else if (isMultiplayerSportsInput.equalsIgnoreCase("n"))
                     {
@@ -864,9 +939,21 @@ public class GuessingGame
                             {
                                 System.out.println(INVALID_INPUT);
                             }
+                        } else
+                        {
+                            System.out.println(INVALID_INPUT);
                         }
+                    } else
+                    {
+                        System.out.println(INVALID_INPUT);
                     }
+                } else
+                {
+                    System.out.println(INVALID_INPUT);
                 }
+            } else
+            {
+                System.out.println(INVALID_INPUT);
             }
         } else
         {
