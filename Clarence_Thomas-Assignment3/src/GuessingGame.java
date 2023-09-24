@@ -1,4 +1,4 @@
-// @author: Clarence Thomas
+// @author: Clarence= Thomas
 // CLASS: Info 1521 WA
 // ASSIGMENT: Assignment 1
 // @version: September 25th, 2023
@@ -18,8 +18,10 @@ public class GuessingGame
         Scanner input = new Scanner(System.in);
         String YES_OR_NO = "Type (Y or N): "; // Constant asking yes or no
         String CORRECT_GAME = "Yay I got it right!!!";
+        String INCORRECT_GAME = "It seems I was unable to guess your game, I do apologize.";
         String EXIT_MESSAGE = "Have a great rest of your day!";
         String TELL_USER_INPUT_INT = "Type an integer (1, 2, 3 etc): ";
+        String INVALID_INPUT = "Invalid response given.";
 
 
         System.out.println("Think of a game/franchise, I'll try to guess it! Press enter when ready");
@@ -67,6 +69,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerSpyGameInput.equalsIgnoreCase("n"))
                         {
@@ -78,6 +86,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (singlePlayerMilitaryInput.equalsIgnoreCase("n"))
@@ -96,6 +110,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerHorrorInput.equalsIgnoreCase("n"))
                         {
@@ -107,6 +127,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -131,6 +157,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerKidsGame.equalsIgnoreCase("n"))
                         {
@@ -142,6 +174,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (singlePlayerPuzzlesInput.equalsIgnoreCase("n"))
@@ -160,6 +198,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerAssassinInput.equalsIgnoreCase("n"))
                         {
@@ -171,6 +215,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -196,7 +246,7 @@ public class GuessingGame
 
                         input.nextLine();
 
-                        if (singlePlayerGameAge < 5)
+                        if (singlePlayerGameAge <= 4)
                         {
                             System.out.println("Is the game Darkest Dungeon 2?");
                             System.out.print(YES_OR_NO);
@@ -206,8 +256,14 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
-                        } else if (singlePlayerGameAge > 10)
+                        } else if (singlePlayerGameAge >= 10)
                         {
                             System.out.println("Is the game Pokemon? ");
                             System.out.print(YES_OR_NO);
@@ -217,8 +273,14 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
-                        } else if (singlePlayerGameAge > 5 && singlePlayerGameAge < 10)
+                        } else if (singlePlayerGameAge >= 5 && singlePlayerGameAge <= 9)
                         {
                             System.out.println("Is the game Into the Breach? ");
                             System.out.print(YES_OR_NO);
@@ -228,6 +290,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (singlePlayerTurnBasedInput.equalsIgnoreCase("n"))
@@ -247,6 +315,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerSetting.equalsIgnoreCase("Earth"))
                         {
@@ -259,6 +333,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -285,6 +365,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerFutureGameInput.equalsIgnoreCase("n"))
                         {
@@ -297,6 +383,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (singlePlayerWinConditionInput.equalsIgnoreCase("n"))
@@ -316,10 +408,16 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (singlePlayerCityGameInput.equalsIgnoreCase("n"))
                         {
-                            System.out.println("Is the game the RimWorld? ");
+                            System.out.println("Is the game RimWorld? ");
                             System.out.print(YES_OR_NO);
 
                             String correctGameChosenInput = input.nextLine();
@@ -328,6 +426,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -341,7 +445,7 @@ public class GuessingGame
 
             if (multiplayerCoopInput.equalsIgnoreCase("y"))
             {
-                System.out.println("Is the game perspective 1st person");
+                System.out.println("Is the game's only perspective 1st person?");
                 System.out.print(YES_OR_NO);
                 String multiplayerFirstPersonInput = input.nextLine();
 
@@ -368,6 +472,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerGalaxySettingInput.equalsIgnoreCase("n"))
                         {
@@ -380,6 +490,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (multiplayerGearBasedRpgInput.equalsIgnoreCase("n"))
@@ -399,6 +515,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerZombieInput.equalsIgnoreCase("n"))
                         {
@@ -411,6 +533,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -427,7 +555,7 @@ public class GuessingGame
                         int multiplayerLobbySize = input.nextInt();
                         input.nextLine();
 
-                        if (multiplayerLobbySize > 50)
+                        if (multiplayerLobbySize >= 50)
                         {
                             System.out.println("Is the game World of Warcraft? ");
                             System.out.print(YES_OR_NO);
@@ -438,8 +566,14 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
-                        } else if (multiplayerLobbySize > 15 && multiplayerLobbySize < 50)
+                        } else if (multiplayerLobbySize >= 16 && multiplayerLobbySize <= 49)
                         {
                             System.out.println("Is the game Tower of Fantasy? ");
                             System.out.print(YES_OR_NO);
@@ -450,6 +584,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerLobbySize > 8 && multiplayerLobbySize <= 15)
                         {
@@ -462,6 +602,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerLobbySize <= 8 )
                         {
@@ -474,6 +620,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (multiplayerMMOInput.equalsIgnoreCase("n"))
@@ -493,6 +645,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayer2dInput.equalsIgnoreCase("n"))
                         {
@@ -505,6 +663,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -539,6 +703,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerShooterLobbySize <= 12)
                         {
@@ -551,6 +721,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (multiplayerMilitaryInput.equalsIgnoreCase("n"))
@@ -570,6 +746,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerBlizzardInput.equalsIgnoreCase("n"))
                         {
@@ -582,6 +764,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
@@ -608,6 +796,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerSportTypeInput.equalsIgnoreCase("Football"))
                         {
@@ -620,6 +814,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     } else if (isMultiplayerSportsInput.equalsIgnoreCase("n"))
@@ -639,6 +839,12 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         } else if (multiplayerBallInput.equalsIgnoreCase("n"))
                         {
@@ -651,11 +857,20 @@ public class GuessingGame
                             {
                                 System.out.println(CORRECT_GAME);
                                 System.out.print(EXIT_MESSAGE);
+                            } else if (correctGameChosenInput.equalsIgnoreCase("n"))
+                            {
+                                System.out.println(INCORRECT_GAME + "\n" + EXIT_MESSAGE);
+                            } else
+                            {
+                                System.out.println(INVALID_INPUT);
                             }
                         }
                     }
                 }
             }
+        } else
+        {
+            System.out.println(INVALID_INPUT);
         }
     }
 }
