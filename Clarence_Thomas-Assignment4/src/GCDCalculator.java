@@ -14,29 +14,43 @@ public class GCDCalculator
         while (decision.equalsIgnoreCase("y"))
         {
             System.out.print("Enter the first number: ");
-            int firstNumberInput = input.nextInt(); // Get users first number
+            int firstNumberInput = input.nextInt(); // Get users 1st number
 
             System.out.print("Enter the second number: ");
-            int secondNumberInput = input.nextInt(); // Get users second number
+            int secondNumberInput = input.nextInt(); // Get users 2nd number
 
-            //Calculation
-            while (firstNumberInput != 0) // While first number is not 0
+            if (firstNumberInput >= secondNumberInput) // If 1st number is larger than or equal to 2nd
             {
-                while (secondNumberInput >= firstNumberInput) // Loop until second number is no longer more than or equal to first
+                //Calculation
+                while (firstNumberInput != 0) // While 1st number is not 0
                 {
-                    secondNumberInput -= firstNumberInput; // Subtract first number from second
+                    while (secondNumberInput >= firstNumberInput) // Loop until 2nd number is no longer more than or equal to 1st
+                    {
+                        secondNumberInput -= firstNumberInput; // Subtract 1st number from 2nd
+                    }
+                    int temp = secondNumberInput; // initialize a temp equaling the new-found 2nd number (from loop)
+                    secondNumberInput = firstNumberInput;
+                    firstNumberInput = temp;
                 }
-                int temp = secondNumberInput; // initilze a temp equaling the new-found second number (from loop)
-                secondNumberInput = firstNumberInput;
-                firstNumberInput = temp;
+                System.out.println(secondNumberInput);
+            } else // If 2nd number is larger than 1st
+            {
+                while (secondNumberInput != 0) // While 2nd number is not 0
+                {
+                    while (firstNumberInput >= secondNumberInput) // Loop until 1st number is no longer more than or equal to 2nd
+                    {
+                        firstNumberInput -= secondNumberInput; // Subtract 2nd number from 1st
+                    }
+                    int temp = firstNumberInput; // initialize a temp equaling the new-found 1st number (from loop)
+                    firstNumberInput = secondNumberInput;
+                    secondNumberInput = temp;
+                }
+                System.out.println(firstNumberInput);
             }
-            System.out.println(secondNumberInput);
-
 
             System.out.print("Continue (y/n)? ");
             decision = input.next(); // Check if user wishes to continue
         }
-
         // If user no longer wishes to continue
         if (decision.equalsIgnoreCase("n"))
         {
