@@ -1,3 +1,11 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 4
+// @version: October 2nd, 2023
+/* RESOURCES: Utilized example provided in assignment rubric page */
+
+/* EXPLANATION: This program finds the Greatest Common Denominator out of the numbers given */
+
 import java.util.Scanner;
 
 public class GCDCalculator
@@ -29,8 +37,8 @@ public class GCDCalculator
                         secondNumberInput -= firstNumberInput; // Subtract 1st number from 2nd
                     }
                     int temp = secondNumberInput; // initialize a temp equaling the new-found 2nd number (from loop)
-                    secondNumberInput = firstNumberInput;
-                    firstNumberInput = temp;
+                    secondNumberInput = firstNumberInput; // Set 2nd number to be equal to 1st
+                    firstNumberInput = temp; // Set the 1st number to be the value stored in the temporary variable
                 }
                 System.out.println(secondNumberInput);
             } else // If 2nd number is larger than 1st
@@ -42,8 +50,8 @@ public class GCDCalculator
                         firstNumberInput -= secondNumberInput; // Subtract 2nd number from 1st
                     }
                     int temp = firstNumberInput; // initialize a temp equaling the new-found 1st number (from loop)
-                    firstNumberInput = secondNumberInput;
-                    secondNumberInput = temp;
+                    firstNumberInput = secondNumberInput; // Set 1st number to be equal to 2nd
+                    secondNumberInput = temp; // Set the 2nd number to be the value stored in the temporary variable
                 }
                 System.out.println(firstNumberInput);
             }

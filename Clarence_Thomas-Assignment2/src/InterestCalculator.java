@@ -3,7 +3,7 @@
 // ASSIGMENT: Assignment 1
 // @version: September 18th, 2023
 /* RESOURCES: Utilized Examples in Chapter 2 of Murach's Java Programming, Also utilized Java Docs on BigDecimal,
- NumebrFormat, setMaximumFractionDigits and setScale */
+ NumberFormat, setMaximumFractionDigits and setScale */
 
 /* EXPLANATION: This program is an Interest Calculator providing the interest, interest rate and loan amount after
 being given the interest rate (in floating point) and loan amount. */
