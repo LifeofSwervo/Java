@@ -20,11 +20,8 @@ public class PaintJobEstimator
         while (cont.equalsIgnoreCase("y"))
         {
             // get input for calculations
-            System.out.print("Enter paint square footage: ");
-            double paintSquareFootage = input.nextDouble();
-
-            System.out.print("Enter cost of paint(per gallon): ");
-            double gallonPaintCost = input.nextDouble();
+            double paintSquareFootage = getDouble(input, "Enter paint square footage: ");
+            double gallonPaintCost = getDouble(input, "Enter cost of paint (per gallon): ");
 
 
             // calculate paint, labor, and costs associated with the job
@@ -68,5 +65,28 @@ public class PaintJobEstimator
     public static double calculateLaborCharges(int laborHours)
     {
         return laborHours * 35;
+    }
+    public static double getDouble(Scanner sc, String prompt)
+    {
+        double value = 0.0;
+        boolean isValid = false;
+
+        while (!isValid)  // While not valid
+        {
+            System.out.print(prompt);
+            String inputStr = sc.next();
+
+            try
+            {
+                value = Double.parseDouble(inputStr);
+                isValid = true;
+            }
+            catch (NumberFormatException e)
+            {
+                System.out.println("Error, enter a valid number. ");
+                sc.nextLine();
+            }
+        }
+        return value;
     }
 }
