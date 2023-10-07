@@ -30,11 +30,11 @@ public class PaintJobEstimator
             // calculate paint, labor, and costs associated with the job
             int gallonsOfPaint = calculateGallonsPaint(paintSquareFootage); // Calculates gallons of paint as an integer
 
-            double hoursOfLabor = calculateLabor(paintSquareFootage);  // Calculates labor, returns as an integer
+            int hoursOfLabor = calculateLabor(paintSquareFootage);  // Calculates labor, returns as an integer
 
-            double totalPaintCost = gallonPaintCost * gallonsOfPaint;
+            double totalPaintCost = calculatePaintCost(gallonsOfPaint, gallonPaintCost); // Calculates cost of paint
 
-            double laborCharges = hoursOfLabor * 35;
+            double laborCharges = calculateLaborCharges(hoursOfLabor); // Calculates labor price
 
             double totalJob = laborCharges + totalPaintCost;
 
@@ -60,5 +60,13 @@ public class PaintJobEstimator
     public static int calculateLabor(double paintSquareFeet)
     {
         return (int) Math.ceil(paintSquareFeet / 112 * 8);
+    }
+    public static double calculatePaintCost(int gallonsOfPaint, double gallonPaintCost)
+    {
+        return gallonPaintCost * gallonsOfPaint;
+    }
+    public static double calculateLaborCharges(int laborHours)
+    {
+        return laborHours * 35;
     }
 }
