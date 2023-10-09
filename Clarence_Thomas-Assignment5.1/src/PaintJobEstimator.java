@@ -33,7 +33,7 @@ public class PaintJobEstimator
 
             double laborCharges = calculateLaborCharges(hoursOfLabor); // Calculates labor price
 
-            double totalJob = laborCharges + totalPaintCost;
+            double totalJob = laborCharges + totalPaintCost; // Calculates total cost of job
 
 
             // Output the results
