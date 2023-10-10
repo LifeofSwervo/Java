@@ -1,3 +1,11 @@
+// @author: Clarence= Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 5.2
+// @version: October 9th, 2023
+/* RESOURCES: Referenced examples provided in assignment, reviewed previous GCD project. */
+
+/* EXPLANATION: This is a GCD project with an iterative and recursive answer provided to the user. */
+
 import java.util.Scanner;
 import java.text.NumberFormat;
 
@@ -49,44 +57,44 @@ public class PaintJobEstimator
             cont = input.next();
         }
     }
-    public static int calculateGallonsPaint(double paintSquareFeet)
+    public static int calculateGallonsPaint(double paintSquareFeet) // Function calculating gallons of paint
     {
         // Round up gallons of paint required (data type converted to int)
         return (int) Math.ceil(paintSquareFeet / 112);
     }
-    public static int calculateLabor(double paintSquareFeet)
+    public static int calculateLabor(double paintSquareFeet) // Function calculating labor
     {
         return (int) Math.ceil(paintSquareFeet / 112 * 8);
     }
-    public static double calculatePaintCost(int gallonsOfPaint, double gallonPaintCost)
+    public static double calculatePaintCost(int gallonsOfPaint, double gallonPaintCost) // Function calculating cost of paint
     {
         return gallonPaintCost * gallonsOfPaint;
     }
-    public static double calculateLaborCharges(int laborHours)
+    public static double calculateLaborCharges(int laborHours) // Function calculating labor charges
     {
         return laborHours * 35;
     }
-    public static double getDouble(Scanner sc, String prompt)
+    public static double getDouble(Scanner sc, String prompt) // Function validating inputs
     {
+        // Declare variables
         double value = 0.0;
         boolean isValid = false;
 
-        while (!isValid)  // While not valid
+        while (!isValid)  // While not valid (turns true upon double value being entered)
         {
             System.out.print(prompt);
-            String inputStr = sc.next();
-
+            String inputStr = sc.next(); // Read users input as a string
             try
             {
-                value = Double.parseDouble(inputStr);
-                isValid = true;
+                value = Double.parseDouble(inputStr); // Converts input string as a double
+                isValid = true; // Turns to true if possible
             }
-            catch (NumberFormatException e)
+            catch (NumberFormatException e) // If attempt fails
             {
-                System.out.println("Error, enter a valid number. ");
-                sc.nextLine();
+                System.out.println("Error, enter a valid number. "); // Provide error msg
+                sc.nextLine(); // Ensure error message doesn't repeat (bug fix)
             }
         }
-        return value;
+        return value; // Return player double inputted
     }
 }
