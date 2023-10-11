@@ -1,10 +1,10 @@
-// @author: Clarence= Thomas
+// @author: Clarence Thomas
 // CLASS: Info 1521 WA
-// ASSIGMENT: Assignment 5.2
+// ASSIGMENT: Assignment 5.1
 // @version: October 9th, 2023
-/* RESOURCES: Referenced examples provided in assignment, reviewed previous GCD project. */
+/* RESOURCES: Referenced examples provided in assignment, referenced book */
 
-/* EXPLANATION: This is a GCD project with an iterative and recursive answer provided to the user. */
+/* EXPLANATION: This is app estimating the details regarding a paint job for "Happy Accidents Paint Company". */
 
 import java.util.Scanner;
 import java.text.NumberFormat;
