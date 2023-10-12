@@ -25,8 +25,8 @@ public class CardDeckApp {
 
     private static String[] getDeck() {
         String[] deck = new String[52]; //
-        String[] suits = {"Hearts", "Spade", "Diamonds", "Clubs"}; // All 4 suits
-        String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"}; // All 13 ranks
+        String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"}; // All 4 suits
+        String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"}; // All 13 ranks
 
         int counter = 0;
         for (String suit : suits) // Loop through suits
@@ -41,7 +41,8 @@ public class CardDeckApp {
     }
 
     private static void displayCards(String[] cards) { // Function displaying cards
-        for (String card : cards) // Loop through cards 
+        System.out.print("|");
+        for (String card : cards) // Loop through cards
         {
             System.out.print(card + "|"); // Display deck, "|" separates the cards.
         }
@@ -50,12 +51,17 @@ public class CardDeckApp {
 
     private static void shuffleDeck(String[] deck) {
         int randomIndex = (int) (Math.random() * deck.length-1);
-        
-        // add code that shuffles the deck here
+        for (int i = 0; i < deck.length; i++)
+        {
+            String temp = deck[i];
+            deck[i] = deck[randomIndex];
+            deck[randomIndex] = temp;
+        }
     }
 
     private static String[] dealCards(String[] deck, int count) {
         String[] hand = new String[count];
+        System.arraycopy(deck, 0, hand, 0, count);
         return hand;
     }
 }
