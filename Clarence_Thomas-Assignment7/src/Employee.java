@@ -20,6 +20,7 @@ public class Employee
         employeeNum = en;
         department = dept;
         jobTitle = job;
+        hoursWorked = 0.0;
         payRate = pr;
     }
 
@@ -32,6 +33,36 @@ public class Employee
     {
         firstName = event.getFirstName();
         lastName = event.getLastName();
+        employeeNum = event.getEmployeeNumber();
+        department = event.getDepartment();
+        jobTitle = event.getJobTitle();
+        hoursWorked = 0.0;
+        payRate = event.getPayRate();
+    }
+
+    public Employee()
+    {
+        this("", "", 0);
+    }
+    // Methods
+    public void addHours()
+    {
+        addHours(1.0);
+    }
+    public void addHours(double h)
+    {
+        if (h >= 0.0)
+        {
+            hoursWorked += h;
+        }
+    }
+    public void resetHours()
+    {
+        hoursWorked = 0.0;
+    }
+    public double calculateWeeklyPay()
+    {
+        return payRate * hoursWorked;
     }
         // Getters
     public String getFirstName()
@@ -46,21 +77,45 @@ public class Employee
     {
         return employeeNum;
     }
+    public String getDepartment()
+    {
+        return department;
+    }
+    public String getJobTitle()
+    {
+        return jobTitle;
+    }
+    public double getPayRate()
+    {
+        return payRate;
+    }
         // Setters
-    public void setFirstName()
+    public void setFirstName(String fn)
     {
         firstName = fn;
     }
-    public void setLastName()
+    public void setLastName(String ln)
     {
         lastName = ln;
     }
-    public void setEmployeeNum()
+    public void setEmployeeNumber(int en)
     {
         employeeNum = en;
     }
+    public void setDepartment(String dept)
+    {
+        department = dept;
+    }
 
-    public String printEmployee()
+    public void setJobTitle(String job) {
+        jobTitle = job;
+    }
+    public void setPayRate(double pr)
+    {
+        payRate = pr;
+    }
+
+    public void printEmployee()
     {
         System.out.println("Name: " + firstName + " " + lastName + "\n"
         + "ID: " + employeeNum + "\n"
