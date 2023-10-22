@@ -13,6 +13,7 @@ public class Employee
     private static NumberFormat currency = NumberFormat.getCurrencyInstance();
 
     // Constructors
+    // Main Constructor setting up Employee's
     public Employee(String fn, String ln, int en, String dept, String job, double pr)
     {
         firstName = fn;
@@ -23,26 +24,38 @@ public class Employee
         hoursWorked = 0.0;
         payRate = pr;
     }
-
+    // Constructor with no dept, job or pay rate
     public Employee(String fn, String ln, int en)
     {
-        this(fn, ln, en, "", "", 0.0);
-    }
-
-    public Employee(Employee event)
-    {
-        firstName = event.getFirstName();
-        lastName = event.getLastName();
-        employeeNum = event.getEmployeeNumber();
-        department = event.getDepartment();
-        jobTitle = event.getJobTitle();
+        firstName = fn;
+        lastName = ln;
+        employeeNum = en;
+        department = "";
+        jobTitle = "";
         hoursWorked = 0.0;
-        payRate = event.getPayRate();
+        payRate = 0;
     }
 
+    public Employee(Employee e)
+    {
+        firstName = e.getFirstName();
+        lastName = e.getLastName();
+        employeeNum = e.getEmployeeNumber();
+        department = e.getDepartment();
+        jobTitle = e.getJobTitle();
+        hoursWorked = 0.0;
+        payRate = e.getPayRate();
+    }
+    // Default Constructor
     public Employee()
     {
-        this("", "", 0);
+        firstName = "";
+        lastName = "";
+        employeeNum = 0;
+        department = "";
+        jobTitle = "";
+        hoursWorked = 0.0;
+        payRate = 0;
     }
     // Methods
     public void addHours()
@@ -56,11 +69,11 @@ public class Employee
             hoursWorked += h;
         }
     }
-    public void resetHours()
+    public void resetHours() // Sets hours worked to 0.0
     {
         hoursWorked = 0.0;
     }
-    public double calculateWeeklyPay()
+    public double calculateWeeklyPay() // Returns payRate times hoursWorked
     {
         return payRate * hoursWorked;
     }
