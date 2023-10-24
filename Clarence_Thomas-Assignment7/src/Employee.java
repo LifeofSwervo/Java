@@ -1,3 +1,11 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 7
+// @version: October 23rd, 2023
+/* RESOURCES: Referenced coding examples and book examples. */
+
+/* EXPLANATION: Employee Project, displaying the employee information to the user.  */
+
 import java.text.NumberFormat;
 
 public class Employee
@@ -36,7 +44,7 @@ public class Employee
         payRate = 0;
     }
 
-    public Employee(Employee e)
+    public Employee(Employee e) // Sets value's
     {
         firstName = e.getFirstName();
         lastName = e.getLastName();
@@ -128,7 +136,7 @@ public class Employee
         payRate = pr;
     }
 
-    public void printEmployee()
+    public void printEmployee() // Prints Employee info
     {
         System.out.println("Name: " + firstName + " " + lastName + "\n"
         + "ID: " + employeeNum + "\n"
