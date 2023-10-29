@@ -3,14 +3,19 @@ public class Visit
     private String date;
     private String doctor;
     private double weight;
-    private int height;
+    private int[] height;
     private String visitInfo;
     private String prescription;
 
     // Main Constructor
     public Visit(String date, String doctor, double weight, int[] height, String visitInfo, String prescription)
     {
-
+        this.date = date;
+        this.doctor = doctor;
+        this.weight = weight;
+        this.height = height;
+        this.visitInfo = visitInfo;
+        this.prescription = prescription;
     }
 
     // Methods
@@ -27,7 +32,7 @@ public class Visit
     {
         return weight;
     }
-    public int getHeight()
+    public int[] getHeight()
     {
         return height;
     }
@@ -41,28 +46,41 @@ public class Visit
     }
 
         // Setters
-    public void setDate(String newDate)
+    public void setDate(String date)
     {
-        date = newDate;
+        this.date = date;
     }
-    public  void setDoctor(String newDoctor)
+    public  void setDoctor(String doctor)
     {
-        doctor = newDoctor;
+        this.doctor = doctor;
     }
-    public void setWeight(double newWeight)
+    public void setWeight(double weight)
     {
-        weight = newWeight;
+        this.weight = weight;
     }
-    public void setHeight(int newHeight)
+    public void setHeight(int[] height)
     {
-        height = newHeight;
+        this.height = height;
     }
-    public void setVisitInfo(String newVisitInfo)
+    public void setVisitInfo(String visitInfo)
     {
-        visitInfo = newVisitInfo;
+        this.visitInfo = visitInfo;
     }
-    public void setPrescription(String newPrescription)
+    public void setPrescription(String prescription)
     {
-        prescription = newPrescription;
+        this.prescription = prescription;
+    }
+    public void printVisit()
+    {
+        System.out.println("Date: " + date + "\n"
+        + "Doctor: " + doctor + "\n"
+        + "Weight: " + weight + "\n"
+        + "Height: " + height[0] + "ft " + height[1] + "in" + "\n"
+        + "Visit Information: " + visitInfo + "\n"
+        + "Medicine(s) Prescribed: " + prescription);
+    }
+    public void printContact()
+    {
+
     }
 }
