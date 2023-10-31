@@ -1,4 +1,3 @@
-//
 
 import java.text.NumberFormat;
 import java.time.LocalDate;
@@ -14,6 +13,7 @@ public class Patient {
     private int[] height; // make this an array with feet and inches
     private String[] dateOfBirth; // stored in MM/DD/YYYY -
     private String stateID;  // use for verifying person ?
+    private ArrayList<Visit> patientHistory;
 
     private static NumberFormat decimals = NumberFormat.getNumberInstance();
 
@@ -27,6 +27,7 @@ public class Patient {
         this.height = height;
         this.dateOfBirth = dateOfBirth;
         this.stateID = stateID;
+        this.patientHistory = new ArrayList<>();
         decimals.setMaximumFractionDigits(2);
     }
 
@@ -41,6 +42,7 @@ public class Patient {
         height = new int[]{0, 0};
         dateOfBirth = new String[]{"", "", ""};
         stateID = "";
+        this.patientHistory = new ArrayList<>();
         decimals.setMaximumFractionDigits(2);
     }
 
@@ -55,6 +57,7 @@ public class Patient {
         height = new int[]{0, 0};
         dateOfBirth = new String[]{"", "", ""};
         stateID = "";
+        this.patientHistory = new ArrayList<>();
         decimals.setMaximumFractionDigits(2);
     }
 
@@ -202,3 +205,43 @@ public class Patient {
         System.out.println("DOB: " + formattedDateOfBirth());
         System.out.println("State License/ID: " + stateID);
     }
+    public void printPatientHistory() // Loop through Array List and print patient visit history
+    {
+        System.out.println("**** Patient Visit History ****");
+        int visitNumber = 1; // Tracks visit number (increases as it loops)
+
+        for (Visit visit : patientHistory)
+        {
+            System.out.println("** Visit " + visitNumber + " **");
+            visit.printVisit(); // Method showing the visit details
+
+            visitNumber++;
+        }
+
+    }
+    public void clearHistory() // Clears History
+    {
+        patientHistory.clear();
+    }
+    public void addNewVisit(Visit newVisit) // Adds new visit
+    {
+        patientHistory.add(newVisit);
+    }
+    public ArrayList<Visit> getPatientHistoryList() // Getter for patient history
+    {
+        return patientHistory;
+    }
+    public boolean removeVisit(Visit contact) // Returns true after removing visit from list
+    {
+        return patientHistory.remove(contact);
+    }
+    public boolean removeVisit(int index) // Returns true if index is less than Array and >= 0;
+    {
+        if (index >= 0 && index < patientHistory.size())
+        {
+            patientHistory.remove(index);
+            return true;
+        }
+        return false;
+    }
+}

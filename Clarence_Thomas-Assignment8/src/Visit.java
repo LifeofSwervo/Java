@@ -1,5 +1,14 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 8
+// @version: October 30th, 2023
+/* RESOURCES: Referenced coding examples and book examples. */
+
+/* EXPLANATION: Returns visit information in the format requested  */
+
 public class Visit
 {
+    // Declare variables
     private String date;
     private String doctor;
     private double weight;
@@ -70,16 +79,15 @@ public class Visit
     {
         this.prescription = prescription;
     }
-    public void printVisit()
+    public void printVisit() // Prints visit info
     {
         System.out.println("Date: " + date + "\n"
         + "Doctor: " + doctor + "\n"
-        + "Weight: " + weight + "\n"
-        + "Height: " + height[0] + "ft " + height[1] + "in" + "\n"
+        + "Weight: " + weight + " Height: " + height[0] + "ft " + height[1] + "in" + "\n"
         + "Visit Information: " + visitInfo + "\n"
-        + "Medicine(s) Prescribed: " + prescription);
+        + "Medicine(s) Prescribed: " + prescription + "\n");
     }
-    public void printContact()
+    public void printContact() // No instructions given on what to do with this method
     {
 
     }

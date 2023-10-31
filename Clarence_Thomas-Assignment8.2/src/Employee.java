@@ -7,6 +7,7 @@
  * Modify the code as needed to complete the assignment.
  */
 import java.text.NumberFormat;
+import java.util.ArrayList;
 
 public class Employee {
     private String firstName;
@@ -16,6 +17,7 @@ public class Employee {
     private String jobTitle;
     private double hoursWorked;
     private double payRate;
+    private ArrayList<EmergencyContact> emergencyContacts;
 
     private static NumberFormat currency = NumberFormat.getCurrencyInstance();
     
@@ -27,7 +29,8 @@ public class Employee {
         department = dept;
         jobTitle = job;
         payRate = pr;
-        hoursWorked = 0;        
+        hoursWorked = 0;
+        this.emergencyContacts = new ArrayList<>();
     }
     
     public Employee(String fn, String ln, int en)
@@ -62,6 +65,7 @@ public class Employee {
         jobTitle = "";
         payRate = 0;
         hoursWorked = 0;
+        this.emergencyContacts = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -146,4 +150,44 @@ public class Employee {
                 "\nDepartment: " + department + "\nTitle: " + jobTitle + "\nPay: " + 
                 currency.format(payRate) + "\nHours Worked: " + hoursWorked);
     }
+
+    public void printEmergencyContacts() // Loop through Emergency Contacts in format
+    {
+        System.out.println("**** Emergency Contacts ****");
+        int contactNumber = 1; // Tracks contact number (increases as it loops)
+
+        for (EmergencyContact emergencyContact : emergencyContacts) // Loop through Array List
+        {
+            System.out.println("\n**** Contact " + contactNumber + " ****");
+            emergencyContact.printContact();
+
+            contactNumber++;
+        }
+    }
+    public void clearContacts() // Clears contacts
+    {
+        emergencyContacts.clear();
+    }
+    public void addNewContact(EmergencyContact contact) // Adds new contacts
+    {
+        emergencyContacts.add(contact);
+    }
+    public ArrayList<EmergencyContact> getEmergencyContactList() // Getter for Emergency Contact List
+    {
+        return emergencyContacts;
+    }
+    public boolean removeContact(EmergencyContact contact) // Returns true after removing from list
+    {
+        return emergencyContacts.remove(contact);
+    }
+    public boolean removeContact(int index)
+    {
+        if (index >= 0 && index < emergencyContacts.size()) // Return true if index is >= 0 and index is > Array List
+        {
+            emergencyContacts.remove(index);
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -165,7 +165,7 @@ public class EmployeeSystemV2 {
         for (Employee e : emp)
         {
             double pay = e.calculateWeeklyPay();
-	    pay = (double)Math.round(pay*100)/100);
+	    pay = (double)Math.round(pay*100)/100;
 	    System.out.printf("%s %s%nWeekly Pay: $%.2f%n", e.getFirstName(), e.getLastName(), pay);
             total += pay;
         } 
