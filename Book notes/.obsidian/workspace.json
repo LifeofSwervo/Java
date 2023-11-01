@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "cf85748bb0b303af",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b89556b0d41ca3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "700bb54cb3387810",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "43d401b7e9550b9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0eaecd007a80dd20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ef846dacc716b21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0e37911ef058f6d8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#A",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7ac43d42595db0e9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b7ffeda0e9b1654",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5fa2ce0b3b827c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8c1a37122cdc73f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5dbef7b3881db1a6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3808f5fa6b9b51bb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ca6ba9a0232d2f6e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "700bb54cb3387810",
+  "lastOpenFiles": [
+    "Pasted image 20231101093308.png",
+    "Pasted image 20231101091626.png",
+    "Pasted image 20231101085125.png",
+    "Pasted image 20231101085049.png",
+    "Pasted image 20231101085026.png",
+    "Pasted image 20231101085023.png",
+    "Pasted image 20231101084723.png",
+    "Murach's Java Programming (6th Edition)/Chapter 9.md",
+    "Murach's Java Programming (6th Edition)"
+  ]
+}
