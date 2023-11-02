@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "file": "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#A",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "file": "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md",
+                "file": "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Murach's Java Programming (6th Edition)/Chapter 9.md"
+                "file": "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 2.md"
               }
             }
           }
@@ -149,6 +148,11 @@
   },
   "active": "700bb54cb3387810",
   "lastOpenFiles": [
+    "Pasted image 20231101161726.png",
+    "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 1.md",
+    "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chapter 9 - Section 2.md",
+    "Pasted image 20231101153415.png",
+    "Pasted image 20231101111015.png",
     "Pasted image 20231101093308.png",
     "Pasted image 20231101091626.png",
     "Pasted image 20231101085125.png",
