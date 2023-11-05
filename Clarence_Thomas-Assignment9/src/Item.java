@@ -1,4 +1,4 @@
-public class Item {
+public abstract class Item {
     private String sku;
     private String name;
     private String manufacturer;
@@ -53,11 +53,38 @@ public class Item {
         this.location = location;
     }
 
-    public void printItem() {
+    public String printItem() {
         System.out.println("Item: " + name);
         System.out.println("Manufacturer: " + manufacturer);
         System.out.println("SKU: " + sku);
         System.out.println("Price: " + price);
         System.out.println("Store Location: " + location);
+        return null;
+    }
+
+    public abstract boolean addInventory(String upc, int amt);
+    public abstract boolean sellItem(String upc);
+    public abstract String getUPC(String size, String color);
+    @Override
+    public String toString() {
+        return "Item: " + name
+                + "\nManufacturer: " + manufacturer
+                + "\nSKU:" + sku
+                + "\nPrice: " + price
+                + "\nStore Location: " + location;
+    }
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj)
+        {
+            return true;
+        }
+        if (obj instanceof Item)
+        {
+            Item other = (Item) obj;
+            return this.sku.equals(other.sku);
+        }
+        return false;
     }
 }

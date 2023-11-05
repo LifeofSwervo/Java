@@ -1,21 +1,17 @@
-public final class Electronic extends Item
+public final class HardItem extends Item
 {
     private String type;
-    private String size;
-    private String color;
+    private String material;
     private int quantity;
-    private int warranty;
     private String upc;
 
-    public Electronic(String sku, String name, String manufacturer, double price, String location, String type,
-                      String size, String color, int quantity, int warranty, String upc)
+    public HardItem(String sku, String name, String manufacturer, double price, String location,
+                    String type, String material, int quantity, String upc)
     {
         super(sku, name, manufacturer, price, location);
         this.type = type;
-        this.size = size;
-        this.color = color;
+        this.material = material;
         this.quantity = quantity;
-        this.warranty = warranty;
         this.upc = upc;
     }
 
@@ -25,23 +21,15 @@ public final class Electronic extends Item
     {
         return type;
     }
-    public String getSize()
+    public String getMaterial()
     {
-        return size;
-    }
-    public String getColor()
-    {
-        return color;
+        return material;
     }
     public int getQuantity()
     {
         return quantity;
     }
-    public int getWarranty()
-    {
-        return warranty;
-    }
-    public String getUPC(String size, String color)
+    public String getUPC(String size,  String color)
     {
         return upc;
     }
@@ -50,27 +38,23 @@ public final class Electronic extends Item
     {
         this.type = type;
     }
-    public void setSize(String size)
+    public void setMaterial(String material)
     {
-        this.size = size;
-    }
-    public void setColor(String color)
-    {
-        this.color = color;
+        this.material = material;
     }
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
-    public void setWarranty(int warranty)
+    public void setUpc(String upc)
     {
-        this.warranty = warranty;
+        this.upc = upc;
     }
 
-    // Adds amount to the quantity field
+    // Add the "amt" to quantity
     public boolean addInventory(String upc, int amt)
     {
-        if (amt > 0) // Check
+        if (amt > 0)
         {
             quantity += amt;
             return true;
@@ -93,11 +77,10 @@ public final class Electronic extends Item
     @Override
     public String toString()
     {
-        return super.toString() + "\nType: " + type + "\n"
-                + "Size: " + size + "\n"
-                + "Color: " + color + "\n"
+        return super.toString() +
+                "\nType: " + type + "\n"
+                + "Material: " + material + "\n"
                 + "Quantity: " + quantity + "\n"
-                + "Warranty(months): " + warranty + "\n"
                 + "UPC: " + upc;
     }
 }
