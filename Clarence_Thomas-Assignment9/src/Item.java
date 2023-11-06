@@ -1,4 +1,4 @@
-public abstract class Item {
+public abstract class Item { // Class is now an abstract
     private String sku;
     private String name;
     private String manufacturer;
@@ -61,12 +61,12 @@ public abstract class Item {
         System.out.println("Store Location: " + location);
         return null;
     }
-
+    // Declare abstract methods
     public abstract boolean addInventory(String upc, int amt);
     public abstract boolean sellItem(String upc);
     public abstract String getUPC(String size, String color);
     @Override
-    public String toString() {
+    public String toString() { // Returns printItem() string.
         return "Item: " + name
                 + "\nManufacturer: " + manufacturer
                 + "\nSKU:" + sku
@@ -74,17 +74,15 @@ public abstract class Item {
                 + "\nStore Location: " + location;
     }
     @Override
-    public boolean equals(Object obj)
+    public boolean equals(Object obj2)
     {
-        if (this == obj)
-        {
+        if (this == obj2) { // If the same return true
             return true;
         }
-        if (obj instanceof Item)
-        {
-            Item other = (Item) obj;
-            return this.sku.equals(other.sku);
+        if (obj2 == null || getClass() != obj2.getClass()) { // Otherwise return false
+            return false;
         }
-        return false;
+        Item otherItem = (Item) obj2;
+        return sku.equals(otherItem.sku); // Compare sku fields
     }
 }

@@ -1,12 +1,13 @@
 public final class Electronic extends Item
 {
+    // Declare variables
     private String type;
     private String size;
     private String color;
     private int quantity;
     private int warranty;
     private String upc;
-
+    // Constructor
     public Electronic(String sku, String name, String manufacturer, double price, String location, String type,
                       String size, String color, int quantity, int warranty, String upc)
     {
@@ -70,22 +71,22 @@ public final class Electronic extends Item
     // Adds amount to the quantity field
     public boolean addInventory(String upc, int amt)
     {
-        if (amt > 0) // Check
+        if (amt > 0) // If positive
         {
-            quantity += amt;
+            quantity += amt; // add amt to quantity
             return true;
-        } else
+        } else // Otherwise return false
         {
             return false;
         }
     }
-    public boolean sellItem(String upc)
+    public boolean sellItem(String upc) // Ensures' quantity is more than 0 before subtracting 1.
     {
-        if (quantity > 0)
+        if (quantity > 0) // If positive
         {
-            quantity--;
+            quantity--; // Lower value
             return true;
-        } else
+        } else // Otherwise return false
         {
             return false;
         }
