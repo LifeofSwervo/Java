@@ -15,7 +15,7 @@ This illustrations displays how to create and use an interface.
 *- The 2nd examples shows a Product class that implements the Printable interface.*
 - The first few statements declare the variables followed by the creation of the Product.
 - The body of the Product class implements the print() method that's created in the Printable Interface. 
-*- The 3rd example that a Product object that implements the Printable interface can be stored in a variable of the Printable type. This means an object created from the Product class showin in this figure is bnoth a Product object and a Printable object. Resulting in it being able to be used anywhere a printing object is.*
+*- The 3rd example that a Product object that implements the Printable interface can be stored in a variable of the Printable type. This means an object created from the Product class shown in this figure is both a Product object and a Printable object. Resulting in it being able to be used anywhere a printing object is.*
 
 ## Interfaces compared to abstract classes
 *- This example shows the similarities and differences of abstract classes and interfaces.*
