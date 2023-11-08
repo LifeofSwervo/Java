@@ -4,11 +4,8 @@ public class Test
 {
     public static void main(String[] args)
     {
-        ArrayList<Double> miles = new ArrayList<>();
-        miles.add(37.5);
-        miles.add(26.2);
-        miles.add(54.7);
-        double m = miles.remove(0);
-        System.out.println(m);
+        Point p1 = new Point(3, 4);
+        Point p2 = new Point(3, 4);
+        System.out.println(p1.equals(p2));
     }
 }

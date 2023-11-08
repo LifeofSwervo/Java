@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1b7ffeda0e9b1654",
@@ -148,6 +149,12 @@
   },
   "active": "700bb54cb3387810",
   "lastOpenFiles": [
+    "Pasted image 20231108052555.png",
+    "Pasted image 20231107121438.png",
+    "Pasted image 20231107113404.png",
+    "Pasted image 20231107111320.png",
+    "Pasted image 20231107111309.png",
+    "Pasted image 20231107081341.png",
     "Pasted image 20231105123900.png",
     "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 11/Chapter 11 - Section 1.md",
     "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 11/Chapter 11 - Section 2.md",
@@ -160,12 +167,6 @@
     "Murach's Java Programming (6th Edition)/Section 1 - Essential Concepts and skills/Chapter 9/Chatper 9 - Section 3",
     "Pasted image 20231103103900.png",
     "Pasted image 20231102103334.png",
-    "Pasted image 20231101161726.png",
-    "Pasted image 20231101153415.png",
-    "Pasted image 20231101111015.png",
-    "Pasted image 20231101093308.png",
-    "Pasted image 20231101091626.png",
-    "Pasted image 20231101085125.png",
     "Murach's Java Programming (6th Edition)/Chapter 9.md",
     "Murach's Java Programming (6th Edition)"
   ]

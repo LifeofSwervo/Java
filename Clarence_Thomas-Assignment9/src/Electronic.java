@@ -1,3 +1,10 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 9
+// @version: November 6th, 2023
+/* RESOURCES: Referenced coding examples and book examples, along with videos given. */
+
+/* EXPLANATION: Returns electronic details for A9RetailChecker.java  */
 public final class Electronic extends Item
 {
     // Declare variables
