@@ -15,4 +15,16 @@
 - (Same figure as an example)
 <p style="text-align:center; font-style: italic; color:#00FFFF">The 2nd example shows that you can declare a variable as an enumeration type. </p>
 - You can then assign a constant in that enumeration to the variable. In this case, the UPS_SECOND_DAY constant is assigned to a ShippingType variable named shipType.
-<p style="text-align:center; font-style: italic; color:#00FFFF">The 3rd example shows a getShippingAmount() method, using the enumeraiton as a parameter type.</p>
+<p style="text-align:center; font-style: italic; color:#00FFFF">The 3rd example shows a getShippingAmount() method, using the enumeration as a parameter.</p>
+- The code then uses a switch expression to determine the shipping amount. (When using a switch statement like this, it isn't necessary to qualify each constant with the name of the enumeration)
+<p style="text-align:center; font-style: italic; color:#00FFFF">The 4th statement shows a statement that calls the getShippingAmount() method. </p>
+- This statement passes the UPS_SECOND_DAY constant to the getShippingAmount() method. Resulting in the method returning a value of 5.99. 
+*- The statement that's commented out shows that you can't use an integer, or any other type, in place of an enumeration. That's true even though the constants in the enumeration are assigned integer values internationally.*
+*- This means enumerations are type safe. If you didn't code the constants as an enumeration, you could use the constant name or its int value wherever the constant is expected.*
+
+## How to enhance an enumeration
+![[Pasted image 20231111141532.png]]
+
+<p style="text-align:center; font-style: italic; color:#00FFFF">This figure shows an enhanced version of the ShippingType enumeration.</p>
+- It includes a toString() method that overrides the toString() method of the Enum class. Without this method, the toString() method of the Enum class returns the name of the constant. 
+- 
