@@ -1,3 +1,10 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 10
+// @version: November 13th, 2023
+/* RESOURCES: Referenced coding examples and book examples. Along with JavaDocs */
+
+/* EXPLANATION: Employee file containing Employee information along with helper functions.  */
 package EmployeeBlueprints;
 // tester employee
 
@@ -230,7 +237,7 @@ public abstract class Employee implements Printable {
     {
         return "Name: " + firstName +" " + lastName + "\nID: " + employeeNum +
                 "\nDepartment: " + department + "\nTitle: " + jobTitle +
-                employeeType.toString();
+                "\nType: " + employeeType;
     }
 
 

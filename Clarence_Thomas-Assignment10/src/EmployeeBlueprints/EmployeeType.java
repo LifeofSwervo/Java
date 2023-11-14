@@ -1,3 +1,10 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Assignment 10
+// @version: November 13th, 2023
+/* RESOURCES: Referenced coding examples and book examples. Along with JavaDocs */
+
+/* EXPLANATION: Employee Type enumeration, used for Hourly, Salary and Commission related info  */
 package EmployeeBlueprints;
 
 /**
