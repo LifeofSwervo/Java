@@ -1,11 +1,17 @@
 package EmployeeBlueprints;
 
+/**
+ * Main employee type enumeration containing HOURLY, SALARY and COMMISSION
+ */
 public enum EmployeeType
 {
     HOURLY,
     SALARY,
     COMMISSION;
 
+    /**
+     * Returns Hourly if ordinal is 0, Salary if it is 1, and Commission if it is 2
+     */
     @Override
     public String toString()
     {
@@ -13,15 +19,15 @@ public enum EmployeeType
         if (ordinal ==  0)
         {
             return "Hourly";
-        } else if (ordinal == 2 )
+        } else if (ordinal == 1 )
         {
             return "Salary";
-        } else if (ordinal == 3 )
+        } else if (ordinal == 2 )
         {
             return "Commission";
         } else
         {
-            return "Error: Ordinal value not between 0-3.";
+            return "Error: Ordinal value not between 0-2.";
         }
     }
 }

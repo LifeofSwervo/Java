@@ -133,6 +133,10 @@ public abstract class Employee implements Printable {
         return jobTitle;
     }
 
+    /**
+     * Sends back the EmployeeType
+     * @return a String for the employeeType
+     */
     public EmployeeType getEmployeeType()
     {
         return employeeType;
@@ -208,6 +212,10 @@ public abstract class Employee implements Printable {
      */
     public abstract void setPay(double pay);
 
+    /**
+     * Updates the Employee type
+     * @param et a variable for the new employeeType
+     */
     public void setEmployeeType(EmployeeType et)
     {
         employeeType = et;
