@@ -1,6 +1,4 @@
 package App;
-import EmployeeObjects.CommissionEmployee;
-import EmployeeBlueprints.Employee;
 
 /**
  *

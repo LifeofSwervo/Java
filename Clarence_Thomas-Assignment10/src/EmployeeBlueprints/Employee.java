@@ -6,11 +6,8 @@
 
 /* EXPLANATION: Employee file containing Employee information along with helper functions.  */
 package EmployeeBlueprints;
-// tester employee
-
-import java.text.NumberFormat;
 import java.util.ArrayList;
-
+// tester employee
 /**
  * The main employee super class that holds the basic information of every
  * employee in the system

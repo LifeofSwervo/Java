@@ -6,7 +6,6 @@
 
 /* EXPLANATION: Printable interface  */
 package EmployeeBlueprints;
-
 import java.text.NumberFormat;
 
 /**

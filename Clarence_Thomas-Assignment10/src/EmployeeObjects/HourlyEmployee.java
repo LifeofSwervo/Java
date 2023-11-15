@@ -1,6 +1,5 @@
 package EmployeeObjects;
 import EmployeeBlueprints.Employee;
-import EmployeeObjects.HourlyEmployee;
 import EmployeeBlueprints.EmployeeType;
 /**
  *

@@ -1,5 +1,12 @@
+// @author: Clarence Thomas
+// CLASS: Info 1521 WA
+// ASSIGMENT: Final Assignment
+// @version: November 13th, 2023
+/* RESOURCES: Referenced Java docs  */
 
-public class Test {
+/* EXPLANATION: Employee file containing Employee information along with helper functions.  */
+
+public class Maze {
     private static final int MAZE_SIZE = 10;
     private static int[][] maze = { // Initial maze
             {0, 0, 1, 1, 1, 1, 1, 1, 1, 1}, // Walls Marked 1, Exit marked -1, Open spots marked 0

@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="dd5c0ebd-c418-40a2-8655-7c2261e19895" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/A10EmployeeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/A10EmployeeChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeBlueprints/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeBlueprints/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmployeeBlueprints/EmployeeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeBlueprints/EmployeeType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeBlueprints/Printable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeBlueprints/Printable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeObjects/CommissionEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeObjects/CommissionEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeObjects/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeObjects/HourlyEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeObjects/SalaryEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeObjects/SalaryEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Y920Gs0uZkFruHlEr42QPYMAE5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Swervo/Documents/GitHub/Java/Clarence_Thomas-Assignment10",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699923252440</updated>
       <workItem from="1699923253449" duration="1003000" />
+      <workItem from="1699929509552" duration="1177000" />
     </task>
     <servers />
   </component>
