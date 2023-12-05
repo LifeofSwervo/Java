@@ -9,7 +9,11 @@ public class Numbers {
     // Display method
     public void display()
     {
-        System.out.println(integerArray);
+        for (int num: integerArray)
+        {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 
     // Getters
@@ -46,11 +50,6 @@ public class Numbers {
         {
             System.out.println("Index out of bounds.");
         }
-    }
-
-    public class NumbersDriver
-    {
-        public 
     }
 }
 
