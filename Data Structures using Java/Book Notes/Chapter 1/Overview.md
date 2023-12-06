@@ -38,3 +38,24 @@ Database:
 
 Record:
 	- Units in which a database is divided. In the index card analogy, each card represents a record. A record includes all the information about some entity, in a situation in which there are many such entities. A record might correspond to a person in a personnel file, a car part in an auto supply inventory, or a recipe in a cookbook file.
+
+Field:
+	- A record is divided into several fields. A field holds a particular kind of data. On an index card for an address book, a person’s name, address, or telephone number is an individual field.
+	- More complex database programs use records with more fields (Figure 1.1 shows this, each line representing a distinct field.)
+	- In Object-Oriented Languages (including Java), they are represented as objects. Individual variables in these objects would be the fields. Fields within a class object are called fields in Java (but members in some other languages such as C++).
+
+![[Pasted image 20231206074832.png]]
+
+Key: 
+	- Keys are used to search record (similar to an ID).
+
+
+#### Object-Oriented Programming
+*(Following section is for people ignorant to OOP.)*
+
+- OOP was invented because procedural languages, such as C, Pascal, and early
+versions of BASIC, were found to be inadequate for large and complex programs.
+
+*Main issues influencing this:*
+- Lack of correspondence between the program and the real world.
+- Internal organization of the program. 
