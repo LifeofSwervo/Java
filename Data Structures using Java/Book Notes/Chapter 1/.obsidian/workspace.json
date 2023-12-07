@@ -4,19 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "354cc77f8343384a",
+        "id": "e20f008145ee09e4",
         "type": "tabs",
         "children": [
           {
-            "id": "bcafedae7b338909",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "f06e6a4308435d9b",
+            "id": "b665efe9815af29f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a3f7fa037dfdcec4",
@@ -156,11 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f06e6a4308435d9b",
+  "active": "b665efe9815af29f",
   "lastOpenFiles": [
+    "Pasted image 20231206184820.png",
+    "Pasted image 20231206184808.png",
+    "Pasted image 20231206184709.png",
+    "Pasted image 20231206184025.png",
+    "Pasted image 20231206184006.png",
+    "Pasted image 20231206183836.png",
+    "Pasted image 20231206183748.png",
+    "Image 12-6-23 at 11.14 AM.jpg.md",
+    "Image 12-6-23 at 12.23 PM.jpg.md",
+    "Overview.md",
     "Pasted image 20231206074832.png",
     "Pasted image 20231204225848.png",
-    "Pasted image 20231204225832.png",
-    "Overview.md"
+    "Pasted image 20231204225832.png"
   ]
 }
