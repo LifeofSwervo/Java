@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ad5e4ba1dec032d9",
@@ -148,6 +149,8 @@
   },
   "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
+    "Image 12-6-23 at 12.23 PM.jpg",
+    "Image 12-6-23 at 11.14 AM.jpg",
     "Chapter 1/Pasted image 20231206074832.png"
   ]
 }

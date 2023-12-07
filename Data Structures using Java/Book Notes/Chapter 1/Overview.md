@@ -59,3 +59,35 @@ versions of BASIC, were found to be inadequate for large and complex programs.
 *Main issues influencing this:*
 - Lack of correspondence between the program and the real world.
 - Internal organization of the program. 
+
+
+#### Poor Modeling of the Real World 
+- Conceptualizing a real-world problem using procedural languages is difficult. Methods carry out a task, while data stores information, but most real-world objects do both of these things. The thermostat on your furnace, for example, carries out tasks (turning the furnace on and off) but also stores information (the current temperature and the desired temperature).
+
+- If you wrote a thermostat control program in a procedural language, you may end up with 2 methods, "furnaceOn()" and "furnaceOff()", but also 2 global variables - "currentTemp" and "desiredTemp". But these methods and variables wouldn't form any sort of programming unit. There would be no unit in the program you could call thermostat, this would only be in the coders mind. 
+	- For larger programs with hundreds of entities this becomes chaotic. This required a better match of things in the program and things in the outside world.
+
+#### Crude Organizational Units
+*Another more subtle issue was the internal organization of a program.*
+- Procedural programs are organized by dividing the code into methods. The issue with this is it focuses on methods at the expense of data. 
+- To simplify, data could be local to a method or global, there was no way to specify that some methods could access a variable and others couldn't.
+- This caused issues when several methods needed to access the same data. 
+- As a solution to these issues objects arose in the community.
+
+#### Objects
+*The breakthrough with OOP is objects can hold methods and variables*
+
+This better represents objects in the real world and allows more programs to work a lot easier.
+
+
+#### Classes
+- Classes were created as a result of the realization that you may want to make several objects of the same type. 
+- Classes are blueprints for one or more objects.
+![[Image 12-6-23 at 11.14 AM.jpg]]
+- C programmers will recognize this syntax as similar to a structure, while C++ programmers will notice that it’s very much like a class in C++, except that there’s no semicolon at the end. (Why did we need the semicolon in C++ anyway?)
+
+#### Creating Objects
+- Specifying a class doesn't create an object of that class. To create the object in Java the "new" keyword would need to be used.
+- At the same time an object is created, you need to store a reference to it in a variable of the same type as the class.
+- Think of a reference as a name for an object
+![[Image 12-6-23 at 12.23 PM.jpg]]
