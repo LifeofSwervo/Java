@@ -1,3 +1,9 @@
+/**
+ * NumbersDriver class, using helpers from Numbers class to display information.
+ *
+ * @author Clarence Thomas
+ * @version 1.0.0
+ */
 public class NumbersDriver
 {
     public static void main(String[] args)
