@@ -128,4 +128,13 @@ This better represents objects in the real world and allows more programs to wor
 	- Any outside entity that needs to access data in a class must do so using a method of the same class. Data is like a queen bee, kept hidden in the middle of the hive, fed and cared for by worker-bee methods.
 
 #### Inheritance and Polymorphism
-- Inheritance: The creation of one class, called the extended or derived class, from another class 
+- Inheritance: The creation of one class, called the extended or derived class, from another class called the base class. The extended class has all the features of the base class along with additional.
+	- For example, a secretary class might be derived from a more general employee class and include a field called typingSpeed that the employee class lacked.
+	- Inheritance is also called subclassing.
+	- The base class may be called the super-class, and the extended class is the subclass.
+	- Inheritance allows you to easily add features to an existing class and aids programs with many related classes.
+	- This makes it easy to reuse classes for slightly different reasons.
+	
+- Polymorphism: Treating objects of different classes in the same way.
+	- Meaning the classes must be derived from the same base class.
+	- In practice, polymorphism usually involves a method call that executes different methods for objects of different classes. 
