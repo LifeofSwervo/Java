@@ -52,7 +52,7 @@ public class Numbers {
     }
     // Setters
     /**
-     * - Method
+     * - Method setting the value of the specified index, also puts constraint on value if 100+ or 0 or less.
      * @param index - An integer for the index of the integerArray.
      * @param value - An integer representing the value to be assigned to the index of the array.
      */
