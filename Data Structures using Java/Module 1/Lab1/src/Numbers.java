@@ -1,12 +1,23 @@
+/**
+ * Numbers class, holding getters and setters along with basic information.
+ *
+ * @author Clarence Thomas
+ * @version 1.0.0
+ */
 public class Numbers {
     private int[] integerArray; // Instance variable
 
-    // Constructor
+    /**
+     * - Constructor, taking int argument that will become the length.
+     * @param arrayLength - A integer for the array length.
+     */
     public Numbers(int arrayLength)
     {
         integerArray = new int[arrayLength];
     }
-    // Display method
+    /**
+     * - Display method, printing list of all the numbers in integersArray.
+     */
     public void display()
     {
         for (int num: integerArray)
@@ -17,6 +28,10 @@ public class Numbers {
     }
 
     // Getters
+    /**
+     * - Integer method getting the value of the specified index in the integerArray.
+     * @param index - A integer used to retrieve the value from that index position of the array.
+     */
     public int getValue(int index)
     {
         try
@@ -28,11 +43,19 @@ public class Numbers {
             return 0;
         }
     }
+    /**
+     * - Integer method returning length of the integerArray.
+     */
     public int getLength()
     {
         return integerArray.length;
     }
     // Setters
+    /**
+     * - Method setting the value of the specified index, also puts constraint on value if 100+ or 0 or less.
+     * @param index - An integer for the index of the integerArray.
+     * @param value - An integer representing the value to be assigned to the index of the array.
+     */
     public void setValue(int index, int value)
     {
         try
