@@ -1,52 +1,39 @@
 {
   "main": {
-    "id": "99ff803eac3ce3a4",
+    "id": "6fc132cd014036e5",
     "type": "split",
     "children": [
       {
-        "id": "a2c0d16643e7bf35",
+        "id": "eac87984ec24a7b4",
         "type": "tabs",
         "children": [
           {
-            "id": "bc43f9c7e47464df",
+            "id": "a6dcb87d513d9f02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1/Overview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e309c6d4ea913e4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Simple Sorting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "6979a08e9f18c20a",
+    "id": "552e3ba3ab3e11be",
     "type": "split",
     "children": [
       {
-        "id": "2cc33e920a53b877",
+        "id": "0d6d095bdb889615",
         "type": "tabs",
         "children": [
           {
-            "id": "bdd236069969ea42",
+            "id": "d98cb609e169cff3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +43,7 @@
             }
           },
           {
-            "id": "a93288e605cff263",
+            "id": "c2c14c231238309a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +58,7 @@
             }
           },
           {
-            "id": "cd43a1a8052fb380",
+            "id": "45847473be9adcd0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "ad5e4ba1dec032d9",
+    "id": "a71730855b60331e",
     "type": "split",
     "children": [
       {
-        "id": "303e3b5515c60bdb",
+        "id": "e43ab57a0dc8d4dc",
         "type": "tabs",
         "children": [
           {
-            "id": "87ec52e2df86f680",
+            "id": "363586f945851de9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Simple Sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +97,19 @@
             }
           },
           {
-            "id": "998df4976a215561",
+            "id": "912cf3a74d3d4e8d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Simple Sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "5868e41a1ec0d576",
+            "id": "0ea9e75b7a095d83",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,12 +120,12 @@
             }
           },
           {
-            "id": "2c69643ee0ceca53",
+            "id": "cfe15ddbac8217e9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md"
+                "file": "Simple Sorting.md"
               }
             }
           }
@@ -159,25 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e309c6d4ea913e4f",
+  "active": "a6dcb87d513d9f02",
   "lastOpenFiles": [
-    "Pasted image 20231212085335.png",
-    "Pasted image 20231211230655.png",
-    "Pasted image 20231211230627.png",
-    "Pasted image 20231211230549.png",
-    "Pasted image 20231211230144.png",
-    "Pasted image 20231211225158.png",
-    "Chapter 3/Simple Sorting.md",
-    "Chapter 3",
-    "Chapter 1/Overview.md",
-    "Arrays.md",
-    "Chapter 2",
-    "Pasted image 20231211092622.png",
-    "Chapter 1/Pasted image 20231206184820.png",
-    "Chapter 1/Pasted image 20231206184808.png",
-    "Chapter 1/Pasted image 20231206184709.png",
-    "Chapter 1/Pasted image 20231206184025.png",
-    "Chapter 1/Image 12-6-23 at 12.23 PM.jpg.md",
-    "Chapter 1/Image 12-6-23 at 11.14 AM.jpg.md"
+    "Pasted image 20231212112354.png",
+    "Pasted image 20231211230655.png.md",
+    "Simple Sorting.md",
+    "Pasted image 20231211230144.png.md"
   ]
 }
