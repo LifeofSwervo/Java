@@ -138,3 +138,10 @@ This better represents objects in the real world and allows more programs to wor
 - Polymorphism: Treating objects of different classes in the same way.
 	- Meaning the classes must be derived from the same base class.
 	- In practice, polymorphism usually involves a method call that executes different methods for objects of different classes. 
+	- For example, a call to display() for a secretary object would invoke a display method in the secretary class, while the exact same call for a manager object would invoke a different display method in the manager class. Polymorphism simplifies and clarifies program design and coding.
+	- For those not familiar with them, inheritance and polymorphism involve significant additional complexity. To keep the focus on data structures and algorithms, we have avoided these features in our example programs. Inheritance and polymorphism are important and powerful aspects of OOP but are not necessary for the explanation of data structures and algorithms.
+	![[Pasted image 20231211092622.png]](Table 1.2)p. 26
+
+##### Java Library Data Structures
+- The java.util package contains data structure's, such as Vector, Stack, Dictionary and Hashtable.
+- We will usually ignore these.
