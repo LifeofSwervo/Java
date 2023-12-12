@@ -38,17 +38,66 @@ public class Numbers {
         }
     }
     // Sort methods
+    public void bubbleSortTest()
+    {
+        for (int i = 0; i < integerArray.length - 1; i++)
+        {
+            for (int j = 0; j < integerArray.length - i - 1; j++)
+            {
+                if (integerArray[j] > integerArray[j + 1])
+                {
+                    int temp = integerArray[j];
+                    integerArray[j] = integerArray[j + 1];
+                    integerArray[j + 1] = temp;
+                }
+            }
+        }
+    }
     public void bubbleSort()
     {
-
+        for (int i = 0; i < integerArray.length; i++)
+        {
+            for (int j = 1; j < (integerArray.length - i); j++)
+            {
+                if (integerArray[j - 1] > integerArray[j])
+                {
+                    int temp = integerArray[j - 1];
+                    integerArray[j - 1] = integerArray[j];
+                    integerArray[j] = temp;
+                }
+            }
+        }
     }
     public void selectionSort()
     {
-
+        for (int i = 0; i < integerArray.length; i++)
+        {
+            int index = i;
+            for (int j = i + 1; j < integerArray.length; j++)
+            {
+                if (integerArray[j] < integerArray[index])
+                {
+                    index = j;
+                }
+            }
+            int smallerNumber = integerArray[index];
+            integerArray[index] = integerArray[i];
+            integerArray[i] = smallerNumber;
+        }
     }
     public void insertionSort()
     {
-
+        for (int j = 1; j < integerArray.length; j++)
+        {
+            int key = integerArray[j];
+            int i = j - 1;
+            while ((i > -1) && ( integerArray[i] > key ))
+            {
+                integerArray[i + 1] = integerArray[i];
+                i--;
+            }
+            integerArray[i+1] = key;
+        }
     }
 
     // Getters

@@ -2,4 +2,4 @@
 - This makes searching for data faster (in a binary search)
 
 
-##### The Array 
+##### The Array Workshop Applet

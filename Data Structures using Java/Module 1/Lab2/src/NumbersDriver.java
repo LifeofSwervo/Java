@@ -8,28 +8,42 @@ public class NumbersDriver
 {
     public static void main(String[] args)
     {
-        // Numbers Object with 10 elements
-        Numbers numbersObject = new Numbers(10);
-        // Display method on object
-        System.out.println("Initial Array: ");
+
+        Numbers numbersObject = new Numbers(10); // Create a Numbers object with 10 elements.
+        numbersObject.randomize(); // Call the randomize method.
+
+        // Display the contents of the array.
+        System.out.println("Randomized Array: ");
         numbersObject.display();
-        System.out.println();
 
-        // Use setValue method on numbers object (0 - 100)
-        numbersObject.setValue(0, 50);
-        numbersObject.setValue(9, 90);
+        numbersObject.bubbleSort(); // Call the bubbleSort method.
 
-        // Use getValue method, displaying values at certain indices.
-        System.out.println("First number of array (Index 0): " + numbersObject.getValue(0));
-        System.out.println("Last number of array (Index 9): " + numbersObject.getValue(9));
-        System.out.println();
+        // Display the contents of the array.
+        System.out.println("\nBubble Sorted Array: ");
+        numbersObject.display();
 
-        // Use getLength method, displaying length of the array.
-        System.out.println("Array Length: " + numbersObject.getLength());
+        numbersObject.randomize(); // Call the randomize method.
 
-        // Display array
-        System.out.println();
-        System.out.println("Final Array: ");
+        // Display the contents of the array.
+        System.out.println("\n2nd Randomized array: ");
+        numbersObject.display();
+
+        numbersObject.selectionSort(); // Call the selectionSort method.
+
+        // Display the contents of the array.
+        System.out.println("\nSelection sorted array: ");
+        numbersObject.display();
+
+        numbersObject.randomize(); // Call the randomize method.
+
+        // Display the contents of the array.
+        System.out.println("\n3rd Randomized array: ");
+        numbersObject.display();
+
+        numbersObject.insertionSort(); // Call the insertionSort method.
+
+        // Display the contents of the array.
+        System.out.println("\nInsertion sorted array: ");
         numbersObject.display();
     }
 }
