@@ -50,3 +50,22 @@
 
 ![[Pasted image 20231212112354.png]]
 - The listing for the selectSort.java program is similar to that for bubbleSort.java, except that the container class is called ArraySel instead of ArrayBub, and the bubbleSort() method has been replaced by selectSort(). Here’s how this method looks:
+
+
+### Insertion Sort
+
+- Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.
+- The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets as the time complexity of insertion sort in the average case and worst case is **O(n2)**, where n is the number of items. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.
+
+*Advantages:*
+- Simple
+- Efficient for small data sets
+- Adaptive
+
+##### Algorithm
+- 1. If the element is the 1st, assume it is sorted. Return 1.
+- 2. Store the next element in a key.
+- 3. Compare the key with all elements in the sorted array.
+- 4. If the element in the sorted is smaller than the current element, move to the next element. Otherwise, shift the greater elements towards the right of the array.
+- 5. Insert the value.
+- 6. Repeat until array is sorted.
