@@ -91,12 +91,12 @@ public class Numbers {
         {
             int key = integerArray[j]; // Current element stored in key.
             int i = j - 1; // "i" represents the index of the element to the left of the current element.
-            while ((i > -1) && ( integerArray[i] > key )) // Compare key with left index of current element.
+            while ((i > -1) && ( integerArray[i] > key )) // While i > -1 and the "i" index > the current element
             {
-                integerArray[i + 1] = integerArray[i];
+                integerArray[i + 1] = integerArray[i]; // Shift elements to the right by 1.
                 i--;
             }
-            integerArray[i+1] = key;
+            integerArray[i+1] = key; // Assign key to element to the right of the shifted element.
         }
     }
 
