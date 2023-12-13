@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dd5c0ebd-c418-40a2-8655-7c2261e19895" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/Chapter 3/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/Chapter 3/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/Chapter 3/Simple Sorting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/Chapter 3/Simple Sorting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Module 1/Lab2/src/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 1/Lab2/src/Numbers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +26,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Swervo/Documents/GitHub/Java/Clarence_Thomas-Assignment10",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Swervo/Documents/GitHub/Java/Clarence_Thomas-Assignment10&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +56,7 @@
       <workItem from="1700520946632" duration="594000" />
       <workItem from="1702145861158" duration="599000" />
       <workItem from="1702339189670" duration="718000" />
+      <workItem from="1702451288314" duration="623000" />
     </task>
     <servers />
   </component>

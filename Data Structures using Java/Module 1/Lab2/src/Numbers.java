@@ -87,11 +87,11 @@ public class Numbers {
     }
     public void insertionSort()
     {
-        for (int j = 1; j < integerArray.length; j++)
+        for (int j = 1; j < integerArray.length; j++) // Iterate through array, start from index 1.
         {
-            int key = integerArray[j];
-            int i = j - 1;
-            while ((i > -1) && ( integerArray[i] > key ))
+            int key = integerArray[j]; // Current element stored in key.
+            int i = j - 1; // "i" represents the index of the element to the left of the current element.
+            while ((i > -1) && ( integerArray[i] > key )) // Compare key with left index of current element.
             {
                 integerArray[i + 1] = integerArray[i];
                 i--;
