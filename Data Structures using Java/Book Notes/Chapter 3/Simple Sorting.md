@@ -1,3 +1,4 @@
+[Source](https://www.javatpoint.com/bubble-sort-in-java)
 - Typically after creating a database you will need to sort it. This may also be a necessity if you intend to search data.
 
 *- Sort Algorithms focused on:*
@@ -18,8 +19,13 @@
 
 
 ### Bubble Sort
-- Slow, Simple, Good Beginner Algorithm.
 
+#### Source:
+- Array traversed from first element to last. If current element is greater than the next element, they are swapped. 
+
+
+#### Book:
+- Slow, Simple, Good Beginner Algorithm.
 ##### Bubble Sort on the Baseball Players
 - Imagine that you’re near-sighted (like a computer program) so that you can see only two of the baseball players at the same time, if they’re next to each other and if you stand very close to them. Given this impediment, how would you sort them? Let’s assume there are N players, and the positions they’re standing in are numbered from 0 on the left to N-1 on the right.
 - Start at end of and compared 2 kids at index 0 and index 1.
@@ -35,6 +41,12 @@
 
 
 ### Selection Sort
+#### Source:
+- Search for the lowest element and arrange it to the proper location. 
+![[Pasted image 20231214111224.png]]
+
+
+#### Book:
 *Improves on the bubble sort by reducing the number of swaps necessary* from *O(N*²) to O(N). Unfortunately, the amount of comparisons remains O(N²).
 
 - Let’s consider the baseball players again. In the selection sort, you can no longer compare only players standing next to each other. Thus, you’ll need to remember a certain player’s height; you can use a notebook to write it down. A magenta-colored towel will also come in handy.
@@ -53,6 +65,10 @@
 
 
 ### Insertion Sort
+
+#### Source:
+- Good for small elements because it takes more time for sorting larger number of elements
+![[Pasted image 20231214110910.png]]
 
 - Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.
 - The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets as the time complexity of insertion sort in the average case and worst case is **O(n2)**, where n is the number of items. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.
