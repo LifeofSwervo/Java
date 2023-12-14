@@ -55,34 +55,37 @@ public class Numbers {
     }
     public void bubbleSort()
     {
-        for (int i = 0; i < integerArray.length; i++)
+        for (int i = 0; i < integerArray.length; i++) // Iterate through array, start from index 0.
         {
-            for (int j = 1; j < (integerArray.length - i); j++)
+            for (int j = 1; j < (integerArray.length - i); j++) // Iterate through the array again,
             {
+                // Check if element below inner loop index is greater than index of inner loop.
                 if (integerArray[j - 1] > integerArray[j])
                 {
                     int temp = integerArray[j - 1];
+                    // Swap the element below the inner loop index with the inner loop index.
                     integerArray[j - 1] = integerArray[j];
-                    integerArray[j] = temp;
+                    integerArray[j] = temp; // Place temp value in the index of the inner loop.
                 }
             }
         }
     }
     public void selectionSort()
     {
-        for (int i = 0; i < integerArray.length; i++)
+        for (int i = 0; i < integerArray.length; i++) // Iterate through array, start from index 0.
         {
             int index = i;
+            // Iterate through the array again, start 1 element higher than the current element.
             for (int j = i + 1; j < integerArray.length; j++)
             {
-                if (integerArray[j] < integerArray[index])
+                if (integerArray[j] < integerArray[index]) // Check if 'j' index is less than 'i' index.
                 {
-                    index = j;
+                    index = j; // Then assign index to 'j'.
                 }
             }
             int smallerNumber = integerArray[index];
-            integerArray[index] = integerArray[i];
-            integerArray[i] = smallerNumber;
+            integerArray[index] = integerArray[i]; // Swaps the smallerNumber with the current outer loop index.
+            integerArray[i] = smallerNumber; // Place small element at the sorted position.
         }
     }
     public void insertionSort()
@@ -90,13 +93,13 @@ public class Numbers {
         for (int j = 1; j < integerArray.length; j++) // Iterate through array, start from index 1.
         {
             int key = integerArray[j]; // Current element stored in key.
-            int i = j - 1; // "i" represents the index of the element to the left of the current element.
-            while ((i > -1) && ( integerArray[i] > key )) // While i > -1 and the "i" index > the current element
+            int i = j - 1; // "i" represents the index of the element below the current element.
+            while ((i > -1) && ( integerArray[i] > key )) // While i > -1 and the "i" index > the current element.
             {
-                integerArray[i + 1] = integerArray[i]; // Shift elements to the right by 1.
+                integerArray[i + 1] = integerArray[i]; // Shift elements up by 1.
                 i--;
             }
-            integerArray[i+1] = key; // Assign key to element to the right of the shifted element.
+            integerArray[i+1] = key; // Assign key to element above the shifted element.
         }
     }
 
