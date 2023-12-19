@@ -6,7 +6,8 @@
  */
 import java.util.Random;
 
-public class Numbers {
+public class Numbers
+{
     private int[] integerArray; // Instance variable
 
     /**
@@ -37,22 +38,9 @@ public class Numbers {
             integerArray[i] = random.nextInt(101); // Random number between 0 and 100
         }
     }
-    // Sort methods
-    public void bubbleSortTest()
-    {
-        for (int i = 0; i < integerArray.length - 1; i++)
-        {
-            for (int j = 0; j < integerArray.length - i - 1; j++)
-            {
-                if (integerArray[j] > integerArray[j + 1])
-                {
-                    int temp = integerArray[j];
-                    integerArray[j] = integerArray[j + 1];
-                    integerArray[j + 1] = temp;
-                }
-            }
-        }
-    }
+    /**
+     * - Sorting algorithm, uses bubble method.
+     */
     public void bubbleSort()
     {
         for (int i = 0; i < integerArray.length; i++) // Iterate through array, start from index 0.
@@ -70,6 +58,9 @@ public class Numbers {
             }
         }
     }
+    /**
+     * - Sorting algorithm, uses selection method.
+     */
     public void selectionSort()
     {
         for (int i = 0; i < integerArray.length; i++) // Iterate through array, start from index 0.
@@ -88,6 +79,9 @@ public class Numbers {
             integerArray[i] = smallerNumber; // Place small element at the sorted position.
         }
     }
+    /**
+     * - Sorting algorithm, uses insertion method.
+     */
     public void insertionSort()
     {
         for (int j = 1; j < integerArray.length; j++) // Iterate through array, start from index 1.

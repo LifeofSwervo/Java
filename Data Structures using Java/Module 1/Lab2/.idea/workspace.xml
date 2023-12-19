@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="787c7c20-8899-439b-9820-6954996b0b5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Clarence_Thomas-Assignment10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Clarence_Thomas-Assignment10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Numbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumbersDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module 2/Written Assignment/~$arence Thomas Written Assignment 2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module 2/Written Assignment/~WRL0004.tmp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ZQ10U3JbKkqH976a3TEK1u4Toh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Swervo/Documents/GitHub/Java/Data Structures using Java/Module 1/Lab2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="787c7c20-8899-439b-9820-6954996b0b5f" name="Changes" comment="" />
+      <created>1702339268569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702339268569</updated>
+      <workItem from="1702339269572" duration="7034000" />
+      <workItem from="1702451286818" duration="1257000" />
+      <workItem from="1702484995830" duration="856000" />
+      <workItem from="1702527835776" duration="355000" />
+      <workItem from="1702571179709" duration="1315000" />
+      <workItem from="1702658926484" duration="544000" />
+      <workItem from="1702697846108" duration="2131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
