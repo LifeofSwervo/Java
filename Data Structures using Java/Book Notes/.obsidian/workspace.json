@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 5/Linked List.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ad5e4ba1dec032d9",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 5/Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 5/Linked List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md"
+                "file": "Chapter 5/Linked List.md"
               }
             }
           }
@@ -148,6 +149,16 @@
   },
   "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
+    "Pasted image 20231226223233.png",
+    "Pasted image 20231225105437.png",
+    "Pasted image 20231225105401.png",
+    "Pasted image 20231225105020.png",
+    "Pasted image 20231223182604.png",
+    "Chapter 4/Stacks and Queues.md",
+    "Chapter 5/Linked List.md",
+    "Chapter 5",
+    "Chapter 3/Simple Sorting.md",
+    "Chapter 4",
     "Chapter 1/Overview.md",
     "Arrays.md",
     "Pasted image 20231212085335.png",
@@ -156,16 +167,11 @@
     "Pasted image 20231211230549.png",
     "Pasted image 20231211230144.png",
     "Pasted image 20231211225158.png",
-    "Chapter 3/Simple Sorting.md",
-    "Chapter 3/Pasted image 20231212112354.png",
     "Chapter 3/Pasted image 20231211230655.png.md",
     "Chapter 3/Pasted image 20231211230144.png.md",
     "Chapter 3",
     "Chapter 2/Arrays.md",
     "Chapter 2",
-    "Pasted image 20231211092622.png",
-    "Chapter 1/Pasted image 20231206184820.png",
-    "Chapter 1/Pasted image 20231206184808.png",
     "Chapter 1/Image 12-6-23 at 12.23 PM.jpg.md",
     "Chapter 1/Image 12-6-23 at 11.14 AM.jpg.md"
   ]
