@@ -2,7 +2,10 @@ public class LinkList
 {
     private Link first;
 
-    // Constructor that takes an array of longs as an argument
+    /**
+     * - Constructor, the data (long) variable are used to create Link objects.
+     * @param dataArray - a long for objects in the Linked List.
+     */
     public LinkList(long[] dataArray) {
         first = null;
         for (long data : dataArray) {
@@ -10,110 +13,147 @@ public class LinkList
         }
     }
 
-    public boolean isEmpty() // true if list is empty
+    /**
+     * Is Empty method, returns boolean. (True if list is empty or false if not)
+     */
+    public boolean isEmpty()
     {
         return (first==null);
     }
 
-    // insertFirst method
+    /**
+     * - Insert First method. Takes data (long), inserts new link at the beginning of the list.
+     */
     public void insertFirst(long data) {
         Link newLink = new Link(data);
         newLink.next = first;
         first = newLink;
     }
 
+    /**
+     * - Delete First method, deletes first link in list.
+     */
+    public Link deleteFirst() {
+        if (!isEmpty()) {
+            Link temp = first;
+            first = first.next;
+            return temp;
+        } else {
+            return null; // If list is empty
+        }
+    }
+
+    /**
+     * - Display's list.
+     */
     public void displayList()
     {
         System.out.print("List (fist-->last): ");
         Link current = first; // start at beginning of list
-        while(current != null) // until end of list,
+        while(current != null) // iterate until end of list
         {
-            current.displayLink(); // print data
+            current.displayLink();
             current = current.next; // move to next link
         }
         System.out.println();
     }
 
-    // Search
+    /**
+     * - Search method, takes value (long), returns a boolean value.
+     * @param value - checked to see if matches current link.
+     */
     public boolean search(long value)
     {
-        Link current = first;
-        while (current != null)
+        Link current = first; // start at beginning of list
+        while (current != null) // iterate until end of list
         {
             if (current.data == value)
             {
-                return true;
+                return true; // Returns true if they match
             }
             current = current.next; // Set up next link
         }
         return false;
     }
 
-    // Number of values
+    /**
+     * - Number of values method, takes value (long), returns count.
+     * @param value - checked to see if matches current link.
+     */
     public int numberOfValues(long value)
     {
-        int count = 0;
-        Link current = first;
-        while (current != null)
+        int count = 0; // Count, tracked to be returned.
+        Link current = first; // start at beginning of list
+        while (current != null) // iterate until end of list
         {
             if (current.data == value)
             {
-                count++;
+                count++; // Increase count if match is found
             }
-            current = current.next;
+            current = current.next; // Move to next link
         }
         return count;
     }
 
-    // Replace Method
+    /**
+     * - Replace method, takes 2 values (long), returns void.
+     * @param oldValue - A long. Swapped with newValue.
+     * @param newValue - A long. Swapped with oldValue.
+     */
     public void replace(long oldValue, long newValue)
     {
-        Link current = first;
-        while (current != null)
+        Link current = first; // start at beginning of list
+        while (current != null) // iterate until end of list
         {
             if (current.data == oldValue)
             {
                 current.data = newValue;
             }
-            current = current.next;
+            current = current.next; // Move to next link
         }
     }
 
-    // Zero method
+    /**
+     * - Zero method, replacing all values in the list with 0's.
+     */
     public void Zero()
     {
-        Link current = first;
-        while (current != null)
+        Link current = first; // start at beginning of list
+        while (current != null) // iterate until end of list
         {
             current.data = 0;
-            current = current.next;
+            current = current.next; // Move to next link
         }
     }
 
-    // GetArray Method
+    /**
+     * - Get Array method, returns data values in array.
+     */
     public long[] getArray()
     {
         int size = getSize();
         long[] dataArray = new long[size];
-        Link current = first;
+        Link current = first; // start at beginning of list
         int index = 0;
-        while (current != null)
+        while (current != null) // iterate until end of list
         {
             dataArray[index++] = current.data;
-            current = current.next;
+            current = current.next; // Move to next link
         }
         return dataArray;
     }
 
-    // helper
+    /**
+     * Get Size method, helper function returning size of link.
+     */
     private int getSize()
     {
         int count = 0;
-        Link current = first;
-        while (current != null)
+        Link current = first; // start at beginning of list
+        while (current != null) // iterate until end of list
         {
             count++;
-            current = current.next;
+            current = current.next; // Move to next link
         }
         return count;
     }
