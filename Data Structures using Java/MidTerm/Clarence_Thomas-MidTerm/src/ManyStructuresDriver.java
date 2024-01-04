@@ -1,6 +1,4 @@
 import java.util.Arrays;
-import java.util.Queue;
-import java.util.Stack;
 
 public class ManyStructuresDriver
 {
@@ -16,10 +14,10 @@ public class ManyStructuresDriver
         System.out.println("Array: " + Arrays.toString(manyStructures.getDataArray()));
 
         // Get and print queue
-        Queue<Long> queue = manyStructures.getQueue();
+        CustomQueue<Long> queue = manyStructures.getQueue();
         System.out.print("Queue: ");
         while (!queue.isEmpty()) {
-            System.out.print(queue.poll() + " ");
+            System.out.print(queue.remove() + " ");
         }
         System.out.println();
 

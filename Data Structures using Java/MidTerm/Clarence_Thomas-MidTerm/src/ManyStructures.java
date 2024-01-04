@@ -36,14 +36,12 @@ public class ManyStructures
      * -
      * @return
      */
-    public Queue<Long> getQueue()
-    {
-        Queue<Long> queue = new LinkedList<>();
-        for (long element : dataArray)
-        {
-            queue.offer(element);
+    public CustomQueue<Long> getQueue() {
+        CustomQueue<Long> customQueue = new CustomQueue<>(dataArray.length);
+        for (long element : dataArray) {
+            customQueue.insert(element);
         }
-        return queue;
+        return customQueue;
     }
 
     /**
