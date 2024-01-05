@@ -14,6 +14,11 @@ public class CustomStack<T>
         stackArray = (T[]) new Object[maxSize];// Create array
         top = -1; // No items yet
     }
+
+    /**
+     * - Push method,
+     * @param value
+     */
     public void push(T value) {
         if (!isFull()) {
             stackArray[++top] = value;

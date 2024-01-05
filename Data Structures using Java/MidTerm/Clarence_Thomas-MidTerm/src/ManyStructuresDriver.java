@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class ManyStructuresDriver
 {
@@ -11,7 +10,8 @@ public class ManyStructuresDriver
         manyStructures.setDataArray(newArray);
 
         // Get and Print
-        System.out.println("Array: " + Arrays.toString(manyStructures.getDataArray()));
+        System.out.print("Array: ");
+        manyStructures.printDataArray();
 
         // Get and print queue
         CustomQueue<Long> queue = manyStructures.getQueue();
