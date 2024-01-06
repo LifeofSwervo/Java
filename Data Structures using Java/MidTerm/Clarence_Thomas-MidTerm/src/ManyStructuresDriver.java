@@ -16,7 +16,8 @@ public class ManyStructuresDriver
         // Get and print queue
         CustomQueue<Long> queue = manyStructures.getQueue();
         System.out.print("Queue: ");
-        while (!queue.isEmpty()) {
+        while (!queue.isEmpty())
+        {
             System.out.print(queue.remove() + " ");
         }
         System.out.println();
@@ -24,7 +25,8 @@ public class ManyStructuresDriver
         // Get and print stack
         CustomStack<Long> stack = manyStructures.getStack();
         System.out.print("Stack: ");
-        while (!stack.isEmpty()) {
+        while (!stack.isEmpty())
+        {
             System.out.print(stack.pop() + " ");
         }
         System.out.println();
@@ -32,7 +34,8 @@ public class ManyStructuresDriver
         // Get and print linked list
         Link linkedList = manyStructures.getLinkedList();
         System.out.print("Linked List: ");
-        while (linkedList != null) {
+        while (linkedList != null)
+        {
             System.out.print(linkedList.data + " ");
             linkedList = linkedList.next;
         }

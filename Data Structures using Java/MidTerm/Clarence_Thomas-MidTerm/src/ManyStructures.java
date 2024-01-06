@@ -35,11 +35,14 @@ public class ManyStructures
      * @param array - A long array, iterated through.
      * @return - Returns final representation of the array.
      */
-    private static String arrayToString(long[] array) {
+    private static String arrayToString(long[] array)
+    {
         StringBuilder sb = new StringBuilder("[");
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++)
+        {
             sb.append(array[i]);
-            if (i < array.length - 1) { // Check if at the end of the array.
+            if (i < array.length - 1) // Check if at the end of the array.
+            {
                 sb.append(", "); // Append comma.
             }
         }
@@ -50,7 +53,8 @@ public class ManyStructures
     /**
      * - Prints Data.
      */
-    public void printDataArray() {
+    public void printDataArray()
+    {
         System.out.println(arrayToString(dataArray));
     }
 
@@ -59,9 +63,11 @@ public class ManyStructures
      * - Get Queue, getter for queue method.
      * @return - Returns queue.
      */
-    public CustomQueue<Long> getQueue() {
+    public CustomQueue<Long> getQueue()
+    {
         CustomQueue<Long> customQueue = new CustomQueue<>(dataArray.length);
-        for (long element : dataArray) {
+        for (long element : dataArray)
+        {
             customQueue.insert(element);
         }
         return customQueue;
@@ -71,9 +77,11 @@ public class ManyStructures
      * - Get Stack, getter for stack method.
      * @return - Returns Stack.
      */
-    public CustomStack<Long> getStack() {
+    public CustomStack<Long> getStack()
+    {
         CustomStack<Long> customStack = new CustomStack<>(dataArray.length);
-        for (long element : dataArray) {
+        for (long element : dataArray)
+        {
             customStack.push(element);
         }
         return customStack;

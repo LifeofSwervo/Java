@@ -4,9 +4,14 @@ public class CustomQueue<T>
     private T[] queArray;
     private int front;
     private int rear;
-    private int nItems;
+    private int nItems; // Number of items variable
 
-    public CustomQueue(int size) {
+    /**
+     * - Constructor, creates a new queue specified by size (int).
+     * @param size - Integer, decides size of Queue.
+     */
+    public CustomQueue(int size)
+    {
         maxSize = size;
         queArray = (T[]) new Object[maxSize];
         front = 0;
@@ -14,44 +19,79 @@ public class CustomQueue<T>
         nItems = 0;
     }
 
-    public void insert(T item) {
-        if (isFull()) {
+    /**
+     * - Insert method, checks if queue is full,
+     * @param item - generic type, inserted into queue.
+     */
+    public void insert(T item)
+    {
+        if (isFull())
+        {
             System.out.println("Queue is full. Cannot insert " + item);
             return;
         }
-        if (rear == maxSize - 1) {
+        // Checks if end of queue has reached the end of the array
+        if (rear == maxSize - 1)
+        {
             rear = -1;
         }
         queArray[++rear] = item;
         nItems++;
     }
 
-    public T remove() {
-        if (isEmpty()) {
+    /**
+     * - Remove method, checks if queue is empty. If not, returns front of queue.
+     * @return - Returns item removed from the front of queue, or null if empty.
+     */
+    public T remove()
+    {
+        if (isEmpty())
+        {
             System.out.println("Queue is empty. Cannot remove.");
             return null;
         }
         T temp = queArray[front++];
-        if (front == maxSize) {
+        // Check if beginning (front) of queue has reached end of array.
+        if (front == maxSize)
+        {
             front = 0;
         }
         nItems--;
         return temp;
     }
 
-    public T peekFront() {
+    /**
+     * - Returns element in the front of the queue without removing it.
+     * @return - Returns front of queue.
+     */
+    public T peekFront()
+    {
         return queArray[front];
     }
 
-    public boolean isEmpty() {
+    /**
+     * - Is Empty method, returns true if number of items in queue are 0.
+     * @return - Returns true if empty.
+     */
+    public boolean isEmpty()
+    {
         return nItems == 0;
     }
-
-    public boolean isFull() {
+    /**
+     * - Is Full method, returns true if number of items are equal to size
+     * @return - Returns true if full.
+     */
+    public boolean isFull()
+    {
         return nItems == maxSize;
     }
 
-    public int size() {
+    /**
+     * - Size method, returns size of queue.
+     * @return - Returns number of items.
+     */
+    public int size()
+    {
         return nItems;
     }
 }

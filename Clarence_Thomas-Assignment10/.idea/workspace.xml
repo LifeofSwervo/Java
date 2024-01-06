@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dd5c0ebd-c418-40a2-8655-7c2261e19895" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/CustomQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/CustomQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/CustomStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/CustomStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/Link.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/ManyStructures.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/ManyStructures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/ManyStructuresDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/MidTerm/Clarence_Thomas-MidTerm/src/ManyStructuresDriver.java" afterDir="false" />
     </list>
@@ -70,6 +72,7 @@
       <workItem from="1703908995960" duration="1173000" />
       <workItem from="1704347608551" duration="832000" />
       <workItem from="1704376907772" duration="594000" />
+      <workItem from="1704469027869" duration="634000" />
     </task>
     <servers />
   </component>

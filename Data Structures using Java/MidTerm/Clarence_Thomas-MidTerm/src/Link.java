@@ -5,7 +5,7 @@ public class Link
 
     /**
      * - Constructor for Link.
-     * @param data
+     * @param data - data used in link element.
      */
     public Link(long data)
     {
