@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 5/Linked List.md",
+                "file": "Chapter 6/Recursion.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ad5e4ba1dec032d9",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 5/Linked List.md",
+                "file": "Chapter 6/Recursion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 5/Linked List.md",
+                "file": "Chapter 6/Recursion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 5/Linked List.md"
+                "file": "Chapter 6/Recursion.md"
               }
             }
           }
@@ -149,13 +148,18 @@
   },
   "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
+    "Pasted image 20240110011140.png",
+    "Pasted image 20240110010043.png",
+    "Pasted image 20240110005839.png",
+    "Chapter 5/Linked List.md",
+    "Chapter 6/Recursion.md",
+    "Chapter 6",
     "Pasted image 20231226223233.png",
     "Pasted image 20231225105437.png",
     "Pasted image 20231225105401.png",
     "Pasted image 20231225105020.png",
     "Pasted image 20231223182604.png",
     "Chapter 4/Stacks and Queues.md",
-    "Chapter 5/Linked List.md",
     "Chapter 5",
     "Chapter 3/Simple Sorting.md",
     "Chapter 4",
@@ -164,9 +168,6 @@
     "Pasted image 20231212085335.png",
     "Pasted image 20231211230655.png",
     "Pasted image 20231211230627.png",
-    "Pasted image 20231211230549.png",
-    "Pasted image 20231211230144.png",
-    "Pasted image 20231211225158.png",
     "Chapter 3/Pasted image 20231211230655.png.md",
     "Chapter 3/Pasted image 20231211230144.png.md",
     "Chapter 3",
