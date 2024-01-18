@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd5c0ebd-c418-40a2-8655-7c2261e19895" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 7/BinaryTreeFromString/BinaryTreeFromString.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Book Notes/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Module 6/Lab6A/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 6/Lab6A/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Structures using Java/Module 7/Lab7A/src/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +73,8 @@
       <workItem from="1704469027869" duration="634000" />
       <workItem from="1705072654471" duration="594000" />
       <workItem from="1705206109245" duration="596000" />
+      <workItem from="1705423863885" duration="601000" />
+      <workItem from="1705507371322" duration="2152000" />
     </task>
     <servers />
   </component>
