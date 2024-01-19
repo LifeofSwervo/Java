@@ -19,3 +19,15 @@
 - Trees have been studied extensively as abstract mathematical entities, so there’s a large amount of theoretical knowledge about them. 
 - A tree is actually an instance of a more general category called a graph. (Visit Chapter 14.)
 ![[Pasted image 20240119113133.png]]
+- Nodes are often entities.
+- Lines are the way the nodes relate.
+- Generally there is 1 node at the top and the amount steadily increases the further down the tree you go.
+- In a binary tree each node has a max of 2 children.
+- More general trees are called multiway trees. (Chapter 10)
+
+
+### Tree Terminology
+-
+
+### Path
+- Think of a person going from node to node along the edges. This resulting sequence is called a path.
