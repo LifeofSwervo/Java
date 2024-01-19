@@ -27,7 +27,7 @@
 
 
 ### Tree Terminology
--
+-![[Pasted image 20240119175125.png]]
 
 ### Path
 - Think of a person going from node to node along the edges. This resulting sequence is called a path.
