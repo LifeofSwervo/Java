@@ -1,11 +1,15 @@
 class Node
 {
-    public char data; //
-    public Node leftChild; // this node’s left child
-    public Node rightChild; // this node’s right child
-    public void displayNode() // display ourself
+    public char data;
+    public Node leftChild;
+    public Node rightChild;
+
+    /**
+     * - Display node, used to display data.
+     */
+    public void displayNode()
     {
         System.out.println(data);
     }
 
-} // end class Node
+}

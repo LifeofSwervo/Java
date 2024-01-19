@@ -11,6 +11,11 @@ public class TreeApp {
         theTree.displayTree();
     }
 
+    /**
+     * - Get String, reads user input and throws exception if issues operating.
+     * @return - Returns readLine method, reading users input.
+     * @throws IOException - Exception thrown in event of error.
+     */
     public static String getString() throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);

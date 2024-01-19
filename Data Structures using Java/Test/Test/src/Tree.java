@@ -3,31 +3,42 @@ import java.util.Stack;
 class Tree
 {
     private Node root; // first node of tree
-    
-    public Tree() // constructor
+
+    /**
+     * - Constructor, setting root to null.
+     */
+    public Tree()
     {
         root = null;
     } // no nodes in tree yet
 
+    /**
+     * - Build Tree, void method.
+     * @param input - A string, variable for user input.
+     */
     public void buildTree(String input)
     {
-        Node[] trees = new Node[input.length()];
+        Node[] trees = new Node[input.length()]; // Creates array of node objects, size determined by input length
 
         // Creates 1 node tree for each letter.
-        for (int i = 0; i < input.length(); i++) {
+        for (int i = 0; i < input.length(); i++)
+        {
             Node node = new Node();
             node.data = input.charAt(i);
             trees[i] = node;
         }
 
-        // Build the binary tree
-        while (trees.length > 1) {
-            Node[] newTrees = new Node[(trees.length + 1) / 2];
-            for (int i = 0; i < newTrees.length; i++) {
+        // Builds the Binary Tree
+        while (trees.length > 1)
+        {
+            Node[] newTrees = new Node[(trees.length + 1) / 2]; // Array, half the size of tree
+            for (int i = 0; i < newTrees.length; i++)
+            {
                 Node parent = new Node();
                 parent.data = '+';
                 parent.leftChild = trees[i * 2];
-                if (i * 2 + 1 < trees.length) {
+                if (i * 2 + 1 < trees.length)
+                {
                     parent.rightChild = trees[i * 2 + 1];
                 }
                 newTrees[i] = parent;
@@ -38,6 +49,12 @@ class Tree
         // The final tree is stored in the root
         root = trees[0];
     }
+
+    /**
+     * - Get Successor, node method. Provides successor of deleted node.
+     * @param delNode - A node, variable indicating deleted node.
+     * @return - Returns successor of deleted node.
+     */
     private Node getSuccessor(Node delNode)
     {
         Node successorParent = delNode;
@@ -59,6 +76,10 @@ class Tree
     }
     // -------------------------------------------------------------
 
+    /**
+     * - Traverse, void method. Initiates the type of tree traversal being used.
+     * @param traverseType - An integer. The type of traversal method being initiated.
+     */
     public void traverse(int traverseType)
     {
         switch(traverseType)
@@ -75,6 +96,11 @@ class Tree
         }
         System.out.println();
     }
+
+    /**
+     * - PreOrder, void method.
+     * @param localRoot - A node. Root node.
+     */
     private void preOrder(Node localRoot)
     {
         if(localRoot != null)
@@ -84,6 +110,11 @@ class Tree
             preOrder(localRoot.rightChild);
         }
     }
+
+    /**
+     * - In Order, void method.
+     * @param localRoot - A node. Root node.
+     */
     private void inOrder(Node localRoot)
     {
         if(localRoot != null)
@@ -93,6 +124,11 @@ class Tree
             inOrder(localRoot.rightChild);
         }
     }
+
+    /**
+     * - Post Order, void method.
+     * @param localRoot - A node. Root node.
+     */
     private void postOrder(Node localRoot)
     {
         if(localRoot != null)
@@ -103,27 +139,35 @@ class Tree
         }
     }
 
-    public void displayTree() {
+    /**
+     * - Display Tree, void method. Displays the binary tree.
+     */
+    public void displayTree()
+    {
         Stack globalStack = new Stack();
         globalStack.push(root);
         int nBlanks = 32;
         boolean isRowEmpty = false;
         System.out.println(
                 "......................................................");
-        while (isRowEmpty == false) {
+        while (isRowEmpty == false)
+        {
             Stack localStack = new Stack();
             isRowEmpty = true;
             for (int j = 0; j < nBlanks; j++)
                 System.out.print(" ");
-            while (globalStack.isEmpty() == false) {
+            while (globalStack.isEmpty() == false)
+            {
                 Node temp = (Node) globalStack.pop();
-                if (temp != null) {
+                if (temp != null)
+                {
                     System.out.print(temp.data);
                     localStack.push(temp.leftChild);
                     localStack.push(temp.rightChild);
                     if (temp.leftChild != null || temp.rightChild != null)
                         isRowEmpty = false;
-                } else {
+                } else
+                {
                     System.out.print("--");
                     localStack.push(null);
                     localStack.push(null);
