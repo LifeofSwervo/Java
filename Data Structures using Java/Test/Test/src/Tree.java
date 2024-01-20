@@ -51,32 +51,6 @@ class Tree
     }
 
     /**
-     * - Get Successor, node method. Provides successor of deleted node.
-     * @param delNode - A node, variable indicating deleted node.
-     * @return - Returns successor of deleted node.
-     */
-    private Node getSuccessor(Node delNode)
-    {
-        Node successorParent = delNode;
-        Node successor = delNode;
-        Node current = delNode.rightChild; // go to right child
-        while(current != null) // until no more
-        { // left children,
-            successorParent = successor;
-            successor = current;
-            current = current.leftChild; // go to left child
-        }
-// if successor not
-        if(successor != delNode.rightChild) // right child,
-        { // make connections
-            successorParent.leftChild = successor.rightChild;
-            successor.rightChild = delNode.rightChild;
-        }
-        return successor;
-    }
-    // -------------------------------------------------------------
-
-    /**
      * - Traverse, void method. Initiates the type of tree traversal being used.
      * @param traverseType - An integer. The type of traversal method being initiated.
      */
@@ -140,7 +114,7 @@ class Tree
     }
 
     /**
-     * - Display Tree, void method. Displays the binary tree.
+     * - Display Tree, void method. Displays the binary tree. Taken from book
      */
     public void displayTree()
     {
