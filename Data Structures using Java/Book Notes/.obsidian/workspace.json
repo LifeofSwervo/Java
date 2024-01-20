@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 6/Recursion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fdd9c822dc0b7c7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chapter 8/Binary Trees.md",
+                "file": "Chapter 3/Simple Sorting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 8/Binary Trees.md",
+                "file": "Chapter 3/Simple Sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 8/Binary Trees.md",
+                "file": "Chapter 3/Simple Sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 8/Binary Trees.md"
+                "file": "Chapter 3/Simple Sorting.md"
               }
             }
           }
@@ -159,30 +146,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fdd9c822dc0b7c7c",
+  "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
     "Pasted image 20240119175125.png",
     "Pasted image 20240119113133.png",
     "Chapter 8/Binary Trees.md",
     "Chapter 8",
-    "Chapter 6/Recursion.md",
     "Pasted image 20240110011140.png",
     "Pasted image 20240110010043.png",
     "Pasted image 20240110005839.png",
-    "Chapter 5/Linked List.md",
-    "Chapter 6",
     "Pasted image 20231226223233.png",
     "Pasted image 20231225105437.png",
     "Pasted image 20231225105401.png",
     "Pasted image 20231225105020.png",
     "Pasted image 20231223182604.png",
-    "Chapter 4/Stacks and Queues.md",
+    "Chapter 6/Recursion.md",
+    "Chapter 6",
+    "Chapter 5/Linked List.md",
     "Chapter 5",
-    "Chapter 3/Simple Sorting.md",
+    "Chapter 4/Stacks and Queues.md",
     "Chapter 4",
+    "Chapter 3/Pasted image 20231214111224.png",
+    "Chapter 3/Pasted image 20231211230627.png.md",
     "Chapter 1/Overview.md",
     "Arrays.md",
-    "Pasted image 20231212085335.png",
+    "Chapter 3/Simple Sorting.md",
     "Chapter 3/Pasted image 20231211230655.png.md",
     "Chapter 3/Pasted image 20231211230144.png.md",
     "Chapter 3",
