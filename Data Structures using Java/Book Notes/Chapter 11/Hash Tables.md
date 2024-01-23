@@ -34,3 +34,15 @@ databaseArray[totalEmployees++] = newRecord;
 
 - Presumable the array is larger than the current number of employees, allowing for expansion, not too much is expected.
 ### Not Always so Orderly
+- The speed and simplicity may be appealing but this is due to the keys being unusually well organized. 
+- They run 1 to the known max, and this maximum is a reasonable size for the array. 
+- Array does not need to be much larger than current number of numbers. 
+
+### A Dictionary
+- Good for situations like creating a (real life) dictionary.
+- Let’s say we want to store a 50,000-word English-language dictionary in main memory. You would like every word to occupy its own cell in a 50,000-cell array, so you can access the word using an index number. 
+- This will make access very fast. But what’s the relationship of these index numbers to the words? Given the word morphosis, for example, how do we find its index number?
+
+### Converting Words to Numbers
+
+.
