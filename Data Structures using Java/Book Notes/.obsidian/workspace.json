@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ad5e4ba1dec032d9",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md"
+                "file": "Chapter 11/Hash Tables.md"
               }
             }
           }
@@ -148,6 +149,11 @@
   },
   "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
+    "Pasted image 20240120175622.png",
+    "Chapter 3/Simple Sorting.md",
+    "Chapter 11/Hash Tables.md",
+    "Chapter 11",
+    "Untitled",
     "Pasted image 20240119175125.png",
     "Pasted image 20240119113133.png",
     "Chapter 8/Binary Trees.md",
@@ -166,11 +172,9 @@
     "Chapter 5",
     "Chapter 4/Stacks and Queues.md",
     "Chapter 4",
-    "Chapter 3/Pasted image 20231214111224.png",
     "Chapter 3/Pasted image 20231211230627.png.md",
     "Chapter 1/Overview.md",
     "Arrays.md",
-    "Chapter 3/Simple Sorting.md",
     "Chapter 3/Pasted image 20231211230655.png.md",
     "Chapter 3/Pasted image 20231211230144.png.md",
     "Chapter 3",
