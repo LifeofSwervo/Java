@@ -46,3 +46,6 @@ databaseArray[totalEmployees++] = newRecord;
 ### Converting Words to Numbers
 
 .
+
+### Java Code for a Linear Probe Hash Table
+
