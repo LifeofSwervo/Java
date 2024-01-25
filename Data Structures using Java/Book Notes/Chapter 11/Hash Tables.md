@@ -44,8 +44,20 @@ databaseArray[totalEmployees++] = newRecord;
 - This will make access very fast. But what’s the relationship of these index numbers to the words? Given the word morphosis, for example, how do we find its index number?
 
 ### Converting Words to Numbers
+- What we need is a system for turning a word into an appropriate index number. To begin, we know that computers use various schemes for representing individual characters as numbers. One such scheme is the ASCII code, in which a is 97, b is 98, and so on, up to 122 for z.
 
-.
+- However, the ASCII code runs from 0 to 255, to accommodate capitals, punctuation, and so on. There are really only 26 letters in English words, so let’s devise our own code, a simpler one that can potentially save memory space. Let’s say a is 1, b is 2, c is 3, and so on up to 26 for z. We’ll also say a blank is 0, so we have 27 characters. (Uppercase letters aren’t used in this dictionary.)
+
+- How do we combine the digits from individual letters into a number that represents an entire word? There are all sorts of approaches. We’ll look at two representative ones, and their advantages and disadvantages.
+
+### Adding the digits
+ - To easily add a word to number, add the code numbers to each character. (A = 1, C = 3, B = 2)
+ - Now say we have the word "cats". 
+ - C = 3 | A = 1 | T = 20 | S = 19 
+ 
+ - We can then add them as they total for 43.
+ - Now in the dictionary the words cats is stored in index 43.
+  
 
 ### Java Code for a Linear Probe Hash Table
 
