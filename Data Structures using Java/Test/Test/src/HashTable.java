@@ -1,8 +1,8 @@
 class HashTable
 {
-    private DataItem[] hashArray; // array holds hash table
+    private String[] hashArray; // array holds hash table
     private int arraySize;
-    private DataItem nonItem; // for deleted items
+    private String nonItem; // for deleted items
 
     /**
      * - Constructor,
@@ -11,8 +11,8 @@ class HashTable
     public HashTable(int size)
     {
         arraySize = size;
-        hashArray = new DataItem[arraySize];
-        nonItem = new DataItem(-1); // deleted item key is -1
+        hashArray = new String[arraySize];
+        nonItem = ""; // deleted item key is -1
     }
     // -------------------------------------------------------------
 
@@ -24,8 +24,8 @@ class HashTable
         System.out.print("Table: ");
         for(int j=0; j<arraySize; j++)
         {
-            if(hashArray[j] != null)
-                System.out.print(hashArray[j].getKey() + " ");
+            if (hashArray[j] != null && !hashArray[j].equals(nonItem))
+                System.out.print(hashArray[j] + " ");
             else
                 System.out.print("** ");
         }
@@ -35,56 +35,82 @@ class HashTable
 
     /**
      * - Hash Function, integer method.
-     * @param key - Integer.
+     * @param key - String.
      * @return -
      */
-    public int hashFunc(int key)
+    public int hashFunc1(String key)
     {
-        return key % arraySize; // hash function
+        int hashVal = 0;
+        int pow27 = 1; // 1, 27, 27*27, etc
+        for (int j = key.length() - 1; j >= 0; j--) // right to left
+        {
+            int letter = key.charAt(j) - 'a' + 1; // convert to 1-26
+            hashVal += pow27 * letter; // times power of 27
+            pow27 *= 27; // next power of 27
+        }
+        return hashVal % arraySize;
+    }
+
+    public int hashFunc2(String key)
+    {
+        int hashVal = key.charAt(0) - 'a' + 1;
+        for (int j = 1; j < key.length(); j++) // left to right
+        {
+            int letter = key.charAt(j) - 'a' + 1; // convert to 1-26
+            hashVal = hashVal * 27 + letter; // multiply and add
+        }
+        return hashVal % arraySize;
+    }
+
+    public int hashFunc3(String key)
+    {
+        int hashVal = 0;
+        for (int j = 0; j < key.length(); j++) // left to right
+        {
+            int letter = key.charAt(j) - 'a' + 1; // convert to 1-26
+            hashVal = (hashVal * 27 + letter) % arraySize; // mod
+        }
+        return hashVal;
     }
     // -------------------------------------------------------------
 
     /**
      * - Insert, void method.
-     * @param item - Integer. Item being inserted
+     * @param key - String. Item being inserted
      */
-    public void insert(DataItem item) // insert a DataItem
-// (assumes table not full)
+    public void insert(String key)
     {
-        int key = item.getKey(); // extract key
-        int hashVal = hashFunc(key); // hash the key
+        int hashVal = hashFunc1(key);
 
-        // Loop until empty or -1
-        while(hashArray[hashVal] != null &&
-                hashArray[hashVal].getKey() != -1)
+        while (hashArray[hashVal] != null && !hashArray[hashVal].equals(nonItem))
         {
-            ++hashVal; // go to next cell
-            hashVal %= arraySize; // wraparound if necessary
+            ++hashVal; // linear probing
+            hashVal %= arraySize;
         }
-        hashArray[hashVal] = item; // insert item
-    } // end insert()
+        hashArray[hashVal] = key;
+    }
 
     /**
      * - Delete, data item method.
      * @param key - Integer. Key value being deleted.
      * @return - Returns deleted value if found, returns null if not.
      */
-    public DataItem delete(int key)
+    public String delete(String key)
     {
-        int hashVal = hashFunc(key); // hash the key
-        while(hashArray[hashVal] != null) // until empty cell,
+        int hashVal = hashFunc1(key);
+
+        while (hashArray[hashVal] != null)
         {
-            // If key is found.
-            if(hashArray[hashVal].getKey() == key)
+            if (hashArray[hashVal].equals(key))
             {
-                DataItem temp = hashArray[hashVal]; // save item
-                hashArray[hashVal] = nonItem; // delete item
-                return temp; // return item
+                String temp = hashArray[hashVal];
+                hashArray[hashVal] = nonItem; // mark as deleted
+                return temp;
             }
-            ++hashVal; // go to next cell
-            hashVal %= arraySize; // wraparound if necessary
+            ++hashVal;
+            hashVal %= arraySize;
         }
-        return null; // can’t find item
+        return null; // not found
     }
 
     /**
@@ -92,19 +118,17 @@ class HashTable
      * @param key - Integer. Key value being searched.
      * @return - Returns item if found, returns null if not.
      */
-    public DataItem find(int key)
+    public String find(String key)
     {
-        int hashVal = hashFunc(key); // hash the key
+        int hashVal = hashFunc1(key);
 
-        // Loop until empty
-        while(hashArray[hashVal] != null) // until empty cell,
+        while (hashArray[hashVal] != null)
         {
-            // If key is found.
-            if(hashArray[hashVal].getKey() == key)
-                return hashArray[hashVal]; // yes, return item
-            ++hashVal; // go to next cell
-            hashVal %= arraySize; // wraparound if necessary
+            if (hashArray[hashVal].equals(key))
+                return hashArray[hashVal];
+            ++hashVal;
+            hashVal %= arraySize;
         }
-        return null; // can’t find item
+        return null; // not found
     }
 }
