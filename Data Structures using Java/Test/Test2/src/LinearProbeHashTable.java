@@ -1,17 +1,24 @@
 public class LinearProbeHashTable {
-    private static final int TABLE_SIZE = 26; // Assuming only lowercase words
-
+    private static final int TABLE_SIZE = 26;
     private String[] table;
-
     public LinearProbeHashTable() {
         table = new String[TABLE_SIZE];
     }
 
+    /**
+     * - Hash, integer method.
+     * @param key - String, key variable being looked for.
+     * @return - Returns of character.
+     */
     private int hash(String key) {
         // Simple hash function for lowercase strings
-        return key.charAt(0) - 'a';
+        return key.charAt(0) - 'a'; // string turned into index value based off position in alphabet.
     }
 
+    /**
+     * - Insert, void method.
+     * @param key - String, key variable being inserted.
+     */
     public void insert(String key) {
         int index = hash(key);
 
@@ -23,6 +30,11 @@ public class LinearProbeHashTable {
         table[index] = key;
     }
 
+    /**
+     * - Search, boolean method.
+     * @param key - String, key variable being
+     * @return - Returns true if key is found. False, if not.
+     */
     public boolean search(String key) {
         int index = hash(key);
 
@@ -38,6 +50,9 @@ public class LinearProbeHashTable {
         return false; // Key not found
     }
 
+    /**
+     * - Display table, void method.
+     */
     public void displayTable() {
         for (int i = 0; i < TABLE_SIZE; i++) {
             System.out.println("Index " + i + ": " + table[i]);
@@ -47,15 +62,19 @@ public class LinearProbeHashTable {
     public static void main(String[] args) {
         LinearProbeHashTable hashTable = new LinearProbeHashTable();
 
-        // Insert some strings
+        // Insert strings
         hashTable.insert("apple");
         hashTable.insert("banana");
-        hashTable.insert("cherry");
+        hashTable.insert("orange");
+        hashTable.insert("strawberry");
+        hashTable.insert("berries");
+        hashTable.insert("kiwi");
+        hashTable.insert("raisin");
 
-        // Display the table
+        // Display table
         hashTable.displayTable();
 
-        // Search for a string
+        // Search for string
         System.out.println("Search for 'banana': " + hashTable.search("banana"));
         System.out.println("Search for 'grape': " + hashTable.search("grape"));
     }
