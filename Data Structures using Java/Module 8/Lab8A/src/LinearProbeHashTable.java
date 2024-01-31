@@ -81,16 +81,13 @@ public class LinearProbeHashTable
         hashTable.insert("apple");
         hashTable.insert("banana");
         hashTable.insert("orange");
-        hashTable.insert("strawberry");
-        hashTable.insert("berries");
-        hashTable.insert("kiwi");
-        hashTable.insert("raisin");
+
 
         // Display table
         hashTable.displayTable();
 
         // Search for string
         System.out.println("Search for 'banana': " + hashTable.search("banana"));
-        System.out.println("Search for 'grape': " + hashTable.search("grape"));
+        System.out.println("Search for 'grape': " + hashTable.search("grape")); // Fail test
     }
 }
