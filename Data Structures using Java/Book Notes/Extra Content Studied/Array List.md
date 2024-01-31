@@ -1,0 +1,4 @@
+- Array list are more flexible as they can print out all of their cotents in a single "print(ArrayListVar)"
+- For example, YouTube subscriptions likely rely on an arrayList (as it changes so often)
+- A resizable array.
+- 

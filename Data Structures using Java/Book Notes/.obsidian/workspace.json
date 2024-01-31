@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 11/Hash Tables.md",
+                "file": "Extra Content Studied/Array List.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 11/Hash Tables.md",
+                "file": "Extra Content Studied/Array List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 11/Hash Tables.md",
+                "file": "Extra Content Studied/Array List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 11/Hash Tables.md"
+                "file": "Extra Content Studied/Array List.md"
               }
             }
           }
@@ -147,13 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc43f9c7e47464df",
+  "active": "bdd236069969ea42",
   "lastOpenFiles": [
+    "Chapter 11/Hash Tables.md",
+    "Extra Content Studied/Array List.md",
+    "Extra Content Studied",
     "Pasted image 20240120175622.png",
     "Chapter 3/Simple Sorting.md",
-    "Chapter 11/Hash Tables.md",
     "Chapter 11",
-    "Untitled",
     "Pasted image 20240119175125.png",
     "Pasted image 20240119113133.png",
     "Chapter 8/Binary Trees.md",
@@ -165,7 +166,6 @@
     "Pasted image 20231225105437.png",
     "Pasted image 20231225105401.png",
     "Pasted image 20231225105020.png",
-    "Pasted image 20231223182604.png",
     "Chapter 6/Recursion.md",
     "Chapter 6",
     "Chapter 5/Linked List.md",
