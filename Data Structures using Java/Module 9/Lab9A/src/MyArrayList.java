@@ -39,7 +39,7 @@ public class MyArrayList
      */
     public String get(int index)
     {
-        if (index < 0 || index > size)
+        if (index < 0 || index >= size)
         {
             return null;
         }
@@ -52,7 +52,7 @@ public class MyArrayList
      */
     public int size()
     {
-        return size;
+        return array.length;
     }
 
     /**
@@ -62,7 +62,7 @@ public class MyArrayList
      */
     public int search(String element)
     {
-        for (int i = 0; 1 < size; i++)
+        for (int i = 0; i < size; i++)
         {
             // If match is found.
             if (array[i].equals(element))
@@ -88,5 +88,71 @@ public class MyArrayList
             }
         }
         return -1;
+    }
+
+    /**
+     * - Find matches, integer method. Finds matches in the array of the element (argument).
+     * @param element - String, element being searched for potential matches.
+     * @return - Returns count of element in array.
+     */
+    public int findMatches(String element)
+    {
+        int count = 0;
+        for (int i = 0; i < size; i++)
+        {
+            if (array[i].equals(element))
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    /**
+     * -
+     * @param element
+     * @return
+     */
+    public int[] findMatchesArray(String element)
+    {
+        int count =  findMatches(element);
+        if (count == 0)
+        {
+            return null;
+        }
+
+        int[] matches = new int[count];
+        int index = 0;
+        for (int i = 0; i < size; i++)
+        {
+            if (array[i].equals(element))
+            {
+                matches[index++] = i;
+            }
+        }
+        return matches;
+    }
+
+    public static void main(String[] args)
+    {
+        MyArrayList list = new MyArrayList(5);
+        list.add("Alpha");
+        list.add("Beta");
+        list.add("Gamma");
+        list.add("Delta");
+        list.add("Epsilon");
+        list.add("Alpha");
+        System.out.println("Size: " + list.size());
+        System.out.println("Search for 'Alpha': " + list.search("Alpha"));
+        System.out.println("Search from end for 'Alpha': " + list.searchFromEnd("Alpha"));
+        System.out.println("Number of matches for 'Alpha': " + list.findMatches("Alpha"));
+
+        int[] matchesArray = list.findMatchesArray("Alpha");
+        System.out.println("Index numbers for 'Alpha' matches:");
+        for (int x : matchesArray)
+        {
+            System.out.println(x);
+        }
+        System.out.println("Element at index 2: " + list.get(2));
     }
 }
