@@ -109,9 +109,9 @@ public class MyArrayList
     }
 
     /**
-     * -
-     * @param element
-     * @return
+     * - Find Matches Array, integer array method. Returns integer array, with index numbers matches.
+     * @param element - String, element being searched for potential matches.
+     * @return - Returns index of matches, if 0 returns null.
      */
     public int[] findMatchesArray(String element)
     {
