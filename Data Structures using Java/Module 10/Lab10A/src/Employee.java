@@ -19,11 +19,11 @@ public class Employee
 
     public Employee(Employee employee)
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstName = employee.firstName;
+        this.lastName = employee.lastName;
         this.id = id;
-        this.dateOfBirth = dateOfBirth;
-        this.rateOfPay = rateOfPay;
+        this.dateOfBirth = employee.dateOfBirth;
+        this.rateOfPay = employee.rateOfPay;
     }
 
     // Getters

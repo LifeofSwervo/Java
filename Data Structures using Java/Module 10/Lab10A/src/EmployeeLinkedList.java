@@ -2,7 +2,7 @@ public class EmployeeLinkedList
 {
     private EmployeeNode head;
 
-    public void addToFirst(Employee employee)
+    public void addToFront(Employee employee)
     {
         EmployeeNode node = new EmployeeNode(employee);
         node.setNext(head);
@@ -23,6 +23,7 @@ public class EmployeeLinkedList
             {
                 return new Employee(current.getEmployee());
             }
+            current = current.getNext();
         }
         return null;
     }
