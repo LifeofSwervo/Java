@@ -17,11 +17,15 @@ public class Employee
         this.rateOfPay = rateOfPay;
     }
 
+    /**
+     * - Employee, copy constructor.
+     * @param employee - Employee variable, employee variable for copy constructor. 
+     */
     public Employee(Employee employee)
     {
         this.firstName = employee.firstName;
         this.lastName = employee.lastName;
-        this.id = id;
+        this.id = employee.id;
         this.dateOfBirth = employee.dateOfBirth;
         this.rateOfPay = employee.rateOfPay;
     }

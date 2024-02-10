@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md",
+                "file": "Chapter 11/Hash Tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 3/Simple Sorting.md"
+                "file": "Chapter 11/Hash Tables.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "bc43f9c7e47464df",
   "lastOpenFiles": [
+    "Chapter 3/Simple Sorting.md",
     "Pasted image 20240120175622.png",
     "Extra Content Studied/Array List.md",
     "Extra Content Studied",
@@ -164,7 +165,6 @@
     "Pasted image 20231225105437.png",
     "Pasted image 20231225105401.png",
     "Pasted image 20231225105020.png",
-    "Pasted image 20231223182604.png",
     "Chapter 6/Recursion.md",
     "Chapter 6",
     "Chapter 5/Linked List.md",
@@ -174,7 +174,6 @@
     "Chapter 3/Pasted image 20231211230627.png.md",
     "Chapter 1/Overview.md",
     "Arrays.md",
-    "Chapter 3/Simple Sorting.md",
     "Chapter 3/Pasted image 20231211230655.png.md",
     "Chapter 3/Pasted image 20231211230144.png.md",
     "Chapter 3",
