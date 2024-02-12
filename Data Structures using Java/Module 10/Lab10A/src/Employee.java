@@ -8,6 +8,14 @@ public class Employee
     private LocalDate dateOfBirth;
     private double rateOfPay;
 
+    /**
+     * - Constructor,
+     * @param firstName - String, first name of employee.
+     * @param lastName - String, last name of employee.
+     * @param id - integer, ID of the employee.
+     * @param dateOfBirth - Local Date, date of birth of the employee.
+     * @param rateOfPay - Double, employee's rate of pay.
+     */
     public Employee(String firstName, String lastName, int id, LocalDate dateOfBirth, double rateOfPay)
     {
         this.firstName = firstName;
@@ -31,26 +39,45 @@ public class Employee
     }
 
     // Getters
+
+    /**
+     * - Get first name, string method.
+     * @return - Returns first name.
+     */
     public String getFirstName()
     {
         return firstName;
     }
-
+    /**
+     * - Get last name, string method.
+     * @return - Returns last name.
+     */
     public String getLastName()
     {
         return lastName;
     }
-
+    /**
+     * - Get ID, integer method.
+     * @return - Returns ID of employee.
+     */
     public int getId()
     {
         return id;
     }
 
+    /**
+     * - Get date of birth, local date method.
+     * @return - Returns date of birth of employee.
+     */
     public LocalDate getDateOfBirth()
     {
         return dateOfBirth;
     }
 
+    /**
+     * - Get rate of pay, double method.
+     * @return - Returns rate of pay of the employee.
+     */
     public double getRateOfPay()
     {
         return rateOfPay;
