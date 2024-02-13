@@ -13,16 +13,28 @@ public class EmployeeNode
         this.next = null;
     }
 
+    /**
+     * - Get Employee, employee method. Getter for employee
+     * @return - Returns employee.
+     */
     public Employee getEmployee()
     {
         return employee;
     }
 
+    /**
+     * - Set next, void method.
+     * @param next - Next variable being set.
+     */
     public void setNext(EmployeeNode next)
     {
         this.next = next;
     }
 
+    /**
+     * - Get next, EmployeeNode method. Getter for next.
+     * @return - Returns next.
+     */
     public EmployeeNode getNext()
     {
         return next;

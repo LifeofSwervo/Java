@@ -7,7 +7,6 @@ public class Employee
     private int id;
     private LocalDate dateOfBirth;
     private double rateOfPay;
-
     /**
      * - Constructor,
      * @param firstName - String, first name of employee.
@@ -24,7 +23,6 @@ public class Employee
         this.dateOfBirth = dateOfBirth;
         this.rateOfPay = rateOfPay;
     }
-
     /**
      * - Employee, copy constructor.
      * @param employee - Employee variable, employee variable for copy constructor. 

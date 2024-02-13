@@ -2,6 +2,10 @@ public class EmployeeLinkedList
 {
     private EmployeeNode head;
 
+    /**
+     * - Add to front, void method.
+     * @param employee - Employee variable,
+     */
     public void addToFront(Employee employee)
     {
         EmployeeNode node = new EmployeeNode(employee);
