@@ -8,7 +8,7 @@ public class Employee
     private LocalDate dateOfBirth;
     private double rateOfPay;
     /**
-     * - Constructor,
+     * - Constructor, with employee attributes.
      * @param firstName - String, first name of employee.
      * @param lastName - String, last name of employee.
      * @param id - integer, ID of the employee.

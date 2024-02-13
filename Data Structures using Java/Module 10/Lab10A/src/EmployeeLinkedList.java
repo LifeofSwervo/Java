@@ -3,8 +3,8 @@ public class EmployeeLinkedList
     private EmployeeNode head;
 
     /**
-     * - Add to front, void method.
-     * @param employee - Employee variable,
+     * - Add to front, void method. Add's employee to the front of the linked list.
+     * @param employee - Employee variable, being added to front.
      */
     public void addToFront(Employee employee)
     {
