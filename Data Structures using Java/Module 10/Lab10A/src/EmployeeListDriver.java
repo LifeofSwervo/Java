@@ -6,7 +6,7 @@ public class EmployeeListDriver
     {
         EmployeeLinkedList list = new EmployeeLinkedList();
 
-        // Add employees to the list
+        // Add employees to the list.
         list.addToFront(new Employee("Grace", "Adkins", 101,
                 LocalDate.of(2003, 4, 3), 45.50));
         list.addToFront(new Employee("Paul", "Thomas", 102,
