@@ -1,7 +1,5 @@
-import java.util.LinkedList;
 
-
-public class DoubleEndedList extends LinkedList
+public class DoubleEndedList extends Linked_List
 {
     private Link first;
     private Link last;

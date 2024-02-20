@@ -1,8 +1,8 @@
-public class LinkedList
+public class Linked_List
 {
     protected Link first;
 
-    public LinkedList()
+    public Linked_List()
     {
         first = null;
     }
@@ -19,7 +19,8 @@ public class LinkedList
         Link current = first;
         while (current != null)
         {
-            current.displayL
+            current.displayLink();
+            current = current.next;
         }
         System.out.println();
     }

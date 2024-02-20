@@ -1,11 +1,10 @@
-import java.util.LinkedList;
 
 public class ManyLinkedLists
 {
     public static final int DoubleEndedList = 1;
     public static final int DoublyLinkedList = 2;
 
-    public static LinkedList createLinkedList(int type)
+    public static Linked_List createLinkedList(int type)
     {
         switch(type)
         {

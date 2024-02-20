@@ -1,6 +1,6 @@
-import java.util.LinkedList;
 
-public class DoublyLinkedList extends LinkedList
+
+public class DoublyLinkedList extends Linked_List
 {
     private Link last;
     private Link first;
@@ -14,11 +14,13 @@ public class DoublyLinkedList extends LinkedList
     {
         Link newLink = new Link(data);
         if (isEmpty())
+        {
             first = newLink;
+        }
         else
         {
             last.next = newLink;
-            newLink.next = first;
+            newLink.next = null;
         }
         last = newLink;
     }
