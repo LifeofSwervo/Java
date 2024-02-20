@@ -1,23 +1,13 @@
 import java.util.LinkedList;
 
-
-public class DoubleEndedList extends LinkedList
+public class DoublyLinkedList extends LinkedList
 {
-    private Link first;
     private Link last;
-
-    public DoubleEndedList()
+    private Link first;
+    public DoublyLinkedList()
     {
         first = null;
         last = null;
-    }
-
-    public void insertFirst(long data) {
-        Link newLink = new Link(data);
-        if (isEmpty())
-            last = newLink;
-        newLink.next = first;
-        first = newLink;
     }
 
     public void insertLast(long data)
@@ -26,12 +16,16 @@ public class DoubleEndedList extends LinkedList
         if (isEmpty())
             first = newLink;
         else
+        {
             last.next = newLink;
+            newLink.next = first;
+        }
         last = newLink;
     }
 
-    public boolean isEmpty()
-    {
+    public boolean isEmpty() {
         return first == null;
     }
 }
+
+

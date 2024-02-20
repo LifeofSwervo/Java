@@ -8,4 +8,9 @@ public class Link
         this.data = data;
         this.next = null;
     }
+
+    public void displayLink()
+    {
+        System.out.print(data + " ");
+    }
 }

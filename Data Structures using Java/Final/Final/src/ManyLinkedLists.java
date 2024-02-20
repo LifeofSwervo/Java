@@ -13,6 +13,8 @@ public class ManyLinkedLists
                 return new DoubleEndedList();
             case DoublyLinkedList:
                 return new DoublyLinkedList();
+            default:
+                throw new IllegalArgumentException("Invalid linked list type: ");
         }
     }
 }

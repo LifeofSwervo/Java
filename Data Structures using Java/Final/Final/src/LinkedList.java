@@ -19,8 +19,7 @@ public class LinkedList
         Link current = first;
         while (current != null)
         {
-            System.out.println(current.data + " ");
-            current = current.next;
+            current.displayL
         }
         System.out.println();
     }
