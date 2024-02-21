@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 
 public class ManyLinkedListDriver
 {
@@ -9,7 +8,15 @@ public class ManyLinkedListDriver
 
         System.out.println("Double ended list: ");
         ((DoubleEndedList) list1).insertFirst(10);
+        ((DoubleEndedList) list1).insertLast(20);
+        ((DoubleEndedList) list1).insertFirst(30);
         list1.displayList();
+
+        System.out.println("\nDoubly Linked List: ");
+        ((DoublyLinkedList) list2).insertFirst(100);
+        ((DoublyLinkedList) list2).insertLast(200);
+        ((DoublyLinkedList) list2).insertFirst(300);
+        list2.displayList();
 
     }
 }

@@ -7,11 +7,8 @@ public class Linked_List
         first = null;
     }
 
-    public void insertFirst(long data)
-    {
-        Link newLink = new Link(data);
-        newLink.next = first;
-        first = newLink;
+    public boolean isEmpty() {
+        return first == null;
     }
 
     public void displayList()

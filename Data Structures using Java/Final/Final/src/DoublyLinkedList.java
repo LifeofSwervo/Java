@@ -3,11 +3,19 @@
 public class DoublyLinkedList extends Linked_List
 {
     private Link last;
-    private Link first;
+
     public DoublyLinkedList()
     {
-        first = null;
+        super();
         last = null;
+    }
+
+    public void insertFirst(long data) {
+        Link newLink = new Link(data);
+        if (isEmpty())
+            last = newLink;
+        newLink.next = first;
+        first = newLink;
     }
 
     public void insertLast(long data)
@@ -23,10 +31,6 @@ public class DoublyLinkedList extends Linked_List
             newLink.next = null;
         }
         last = newLink;
-    }
-
-    public boolean isEmpty() {
-        return first == null;
     }
 }
 

@@ -1,12 +1,11 @@
 
 public class DoubleEndedList extends Linked_List
 {
-    private Link first;
     private Link last;
 
     public DoubleEndedList()
     {
-        first = null;
+        super();
         last = null;
     }
 
@@ -26,10 +25,5 @@ public class DoubleEndedList extends Linked_List
         else
             last.next = newLink;
         last = newLink;
-    }
-
-    public boolean isEmpty()
-    {
-        return first == null;
     }
 }
