@@ -32,15 +32,17 @@ public class ManyLinkedListDriver
         System.out.println();
 
         // Traversing forwards and backwards
-        System.out.println("Traversing forwards:");
+        System.out.println("Traversing forward:");
         Link current = list2.getFirst();
-        while (current != null) {
+        while (current != null)
+        {
             current.displayLink();
             current = current.next;
         }
         System.out.println("\nTraversing backwards:");
         current = list2.getLast();
-        while (current != null) {
+        while (current != null)
+        {
             current.displayLink();
             current = current.previous;
         }
