@@ -4,7 +4,7 @@ public class ManyLinkedLists
     public static final int DoubleEndedList = 1;
     public static final int DoublyLinkedList = 2;
 
-    public static Linked_List createLinkedList(int type)
+    public static Object createLinkedList(int type)
     {
         switch(type)
         {
