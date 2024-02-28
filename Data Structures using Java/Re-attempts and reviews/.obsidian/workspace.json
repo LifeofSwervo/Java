@@ -202,7 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "6081b369c0621840",
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Final.md",
+                "file": "Lab 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Final.md",
+                "file": "Lab 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Final.md"
+                "file": "Lab 1.md"
               }
             }
           }
@@ -279,7 +279,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38e6bc4e50aa2ab1",
+  "active": "42cb741b68a85b83",
   "lastOpenFiles": [
     "Lab 10.md",
     "Final.md",

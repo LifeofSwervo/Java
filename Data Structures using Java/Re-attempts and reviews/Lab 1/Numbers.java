@@ -17,7 +17,6 @@ public class Numbers
     }
 
     // Getters
-
     public int getValue() 
     {
         try 
