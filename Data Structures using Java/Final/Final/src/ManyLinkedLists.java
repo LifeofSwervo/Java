@@ -1,11 +1,15 @@
-import java.util.LinkedList;
 
 public class ManyLinkedLists
 {
     public static final int DoubleEndedList = 1;
     public static final int DoublyLinkedList = 2;
 
-    public static LinkedList createLinkedList(int type)
+    /**
+     * - Created Linked list, static object method. Creates linked list that is either DEL or DLL.
+     * @param type - Indicator to the type of Linked list.
+     * @return - Returns a new list or an exception.
+     */
+    public static Object createLinkedList(int type)
     {
         switch(type)
         {

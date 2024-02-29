@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fff0875047607b99",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc43f9c7e47464df",
+  "active": "fff0875047607b99",
   "lastOpenFiles": [
     "Chapter 3/Simple Sorting.md",
     "Pasted image 20240120175622.png",
