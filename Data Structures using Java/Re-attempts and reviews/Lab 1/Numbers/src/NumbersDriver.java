@@ -18,5 +18,9 @@ public class NumbersDriver
         System.out.println("Last number in array: " + numbersObject.getValue(9));
         System.out.println();
 
+        // Use the Get length method
+        System.out.println("Get length method: " + numbersObject.getLength());
+        numbersObject.display();
+
     }
 }

@@ -9,11 +9,17 @@ public class Numbers
 
     public void display()
     {
+        System.out.println("Displayed array: ");
         for (int num : intArray)
         {
             System.out.println(num + " ");
         }
         System.out.println();
+    }
+
+    public int getLength()
+    {
+        return intArray.length;
     }
 
     // Getters

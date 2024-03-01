@@ -19,5 +19,5 @@ Then create a class named NumbersDriver.  It contains your main method.  In th
 - Instantiate a Numbers object that contains a 10 element array. Call the display method of the Numbers object.
 - Use the setValue method to assign values to the elements of the array that is encapsulated within the Numbers object.
 - Use the getValue method to return and display the first and last numbers in the array.
-- Use the getLength method to return and display the length (the number of elements) of the array.Call the display method to the Numbers object once again.
+- Use the getLength method to return and display the length (the number of elements) of the array. Call the display method to the Numbers object once again.
 - Clearly describe what you are doing when you call your main methods.  Do not have anonymous data simple appear with no clue as to what it is.
