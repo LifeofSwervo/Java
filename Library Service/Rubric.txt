@@ -1,0 +1,9 @@
+For now we can start developing library service. It is a REST services for adding books and storing in a DB. DB should consists id, name author (unique). Book table should consist id, name of book (unique), id of author, available quantity.
+
+It has to provide several endpoints. Post / books – (for adding book to the DB). Request should be a JSON with name of a book, author’s name and quantity. It should return json with added book to database as a response. 
+
+GET /books/{name} – (for getting available quantity of a book). Response is a json with the name of a book, it’s author and available quantity in library.
+
+Post /quantity/return/books/{name} – For returning books in library. The service should increase quantity of book in the DB and return response of error. 
+
+Please use postgre as a DB and Liquibase as a migration plugin for spring bot. Of course, the service has to use spring data and spring be (Lombok as a code generation). Use maven as a build system. 
