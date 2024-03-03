@@ -21,6 +21,5 @@ public class NumbersDriver
         // Use the Get length method
         System.out.println("Get length method: " + numbersObject.getLength());
         numbersObject.display();
-
     }
 }
