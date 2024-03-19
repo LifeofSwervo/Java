@@ -30,7 +30,19 @@ public class Numbers
 
     public void bubbleSort()
     {
-
+        for (int i = 0; i < intArray.length; i++)
+        {
+            for (int j = 1; j < (intArray.length - 1); j++)
+            {
+                if (intArray[j - 1] > intArray[j])
+                {
+                    int temp = intArray[j - 1];
+                    // Swap
+                    intArray[j - 1] = intArray[j];
+                    intArray[j] = temp;
+                }
+            }
+        }
     }
 
     public void selectionSort()
@@ -53,7 +65,17 @@ public class Numbers
 
     public void insertionSort()
     {
-
+        for (int j = 1; j < intArray.length; j++)
+        {
+            int key = intArray[j];
+            int i = j - 1;
+            while ((i > -1) && (intArray[i] > key))
+            {
+                intArray[i + 1] = intArray[i];
+                i--;
+            }
+            intArray[i + 1] = key;
+        }
     }
 
     public int getLength()
