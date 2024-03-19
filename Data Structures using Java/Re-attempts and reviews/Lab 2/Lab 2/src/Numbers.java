@@ -35,7 +35,20 @@ public class Numbers
 
     public void selectionSort()
     {
-
+        for (int i = 0; i < intArray.length; i++)
+        {
+            int index = i;
+            for (int j = i + 1; j < intArray.length; j++)
+            {
+                if (intArray[j] > intArray[index])
+                {
+                    index = j;
+                }
+            }
+            int smallerNumber = intArray[index];
+            intArray[index] = intArray[i];
+            intArray[i] = smallerNumber;
+        }
     }
 
     public void insertionSort()
